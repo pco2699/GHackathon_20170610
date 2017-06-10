@@ -28,6 +28,7 @@ $(function () {
 
     $('.janken_finish').on('click', function () {
         $('.janken').fadeOut(1000);
+        $('.janken_result').fadeOut(1000);
     });
 
 
