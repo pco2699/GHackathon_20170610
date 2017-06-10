@@ -47,10 +47,6 @@ $(function () {
         $.get("js/message.json", function (data) {
 
             var message_data = data;
-            if (j_stage == 2) {
-                $('.explain_bt').hide();
-                $('.start_bt').text('つづける。');
-            }
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
                 // Leap 検知開始
@@ -111,6 +107,11 @@ $(function () {
                 $('.doragon').delay(400).fadeOut(300);
                 $('.janken').fadeOut(300);
                 $('.janken_result').fadeOut(300);
+                if (j_stage == 2) {
+                    $('.explain_bt').hide();
+                    $('.start_bt').text('つづける。');
+                }
+
             });
 
             //じゃんけん勝敗判定関数
