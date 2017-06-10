@@ -1,17 +1,17 @@
 $(function () {
-    //ウインドウサイズをいい感じに合わせる
+    //ウインドウサイズ調整用
     $(window).on('load resize', function () {
         var h = $(window).height();
         var w = $(window).width();
     });
 
-
+    //スタートボタンでじゃんけんウインドウ表示
     $('.start_bt').on('click', function () {
         $('.janken').fadeIn(1000);
     });
 
 
-
+    //じゃんけん関数(多分使わない)
     $(".gu_btn").on("click", function () {
         var humanGu = 1;
         var com = Math.floor(Math.random() * 3 + 1);
