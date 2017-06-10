@@ -164,6 +164,11 @@
   z-index: 10;
 }
 
+.explain {
+  z-index: 2;
+  border: 1px solid red;
+}
+
 .janken_inner {
   height: 100%;
   margin: 0 auto;
@@ -186,6 +191,13 @@
   width: 230px;
   margin-left: -115px;
   border: 1px solid red;
+}
+
+.close_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 /*　個別　*/
