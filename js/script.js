@@ -22,19 +22,29 @@ $(function () {
                 //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
-                    $('.enemy').html('< img src =' + '"img/enemy1.jpg"' + '>');
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy1.jpg")'
+                    });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 2) {
-                    $('.enemy').html('< img src =' + '"img/enemy2.jpg"' + '>');
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy2.jpg")'
+                    });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 3) {
-                    $('.enemy').html('< img src =' + '"img/enemy3.jpg"' + '>');
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy3.jpg")'
+                    });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 4) {
-                    $('.enemy').html('< img src =' + '"img/enemy4.jpg"' + '>');
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy4.jpg")'
+                    });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 5) {
-                    $('.enemy').html('< img src =' + '"img/enemy5.jpg"' + '>');
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy5.jpg")'
+                    });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 }
 
