@@ -21,26 +21,26 @@ $(function () {
 
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
-                var n = 1;
-                alert(message_data["ms" + n]);
+                //                var n = 1;
+                //                alert(message_data["ms" + n]);
 
                 //敵の種類を選ぶ
-                var enemy = Math.floor(Math.random() * 3 + 1);
+                var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
                     $('.enemy').html('敵1')
-                    $('.enemy_txt').html('神は死んだ')
+                    $('.enemy_txt').html(message_data["ms" + enemy])
                 } else if (j_stage == 2) {
                     $('.enemy').html('敵2')
-                    $('.enemy_txt').html('考えるのではなく感じるのだ')
+                    $('.enemy_txt').html(message_data["ms" + enemy])
                 } else if (j_stage == 3) {
                     $('.enemy').html('敵3')
-                    $('.enemy_txt').html('諦めたらそこで試合終了ですよ')
+                    $('.enemy_txt').html(message_data["ms" + enemy])
                 } else if (j_stage == 4) {
                     $('.enemy').html('敵4')
-                    $('.enemy_txt').html('クリリンのことかー')
+                    $('.enemy_txt').html(message_data["ms" + enemy])
                 } else if (j_stage == 5) {
                     $('.enemy').html('敵5')
-                    $('.enemy_txt').html('我が生涯に一片の悔い無し')
+                    $('.enemy_txt').html(message_data["ms" + enemy])
                 }
 
                 //ロード画面表示→消去
