@@ -8,9 +8,10 @@ $(function () {
 
     //メニューの1-5番目カウント用
     var j_stage = 1;
+    //データ格納用
     var menu_data;
 
-
+    //外部データの読み込み
     $.get("js/data.json", function (data) {
         // menu_data = $.parseJSON(data);
         menu_data = data;
@@ -34,10 +35,13 @@ $(function () {
             $('.janken').fadeIn(500);
         });
 
-        //仮に勝つボタンを押すと結果表示
-        //    $('.janken_win_kari').on('click', function () {
-        //        $('.janken_result').fadeIn(1000);
-        //    })
+        //拳醤ボタンを押すと結果表示，閉じるボタンで消去
+        $('.explain_bt').on('click', function () {
+            $('.explain').fadeIn(500);
+        });
+        $('.explain_close').on('click', function () {
+            $('.explain').fadeOut(500);
+        });
 
         //終了を押すとウインドウ消去
         $('.janken_finish').on('click', function () {
@@ -303,9 +307,5 @@ $(function () {
                 j_stage++;
             }
         });
-
-
     });
-
-
 });
