@@ -5,7 +5,17 @@ $(function () {
         var w = $(window).width();
     });
 
+function playSound(src, loop) {
+    // src = 再生する音楽のパス
+    // loop = loopする or not
 
+    if(loop === "noloop"){
+        $(".audio").removeAttr("loop");
+    }
+    $(".audio").removeAttr("src");
+    $(".audio").attr("src", src);
+    $(".audio")[0].play();
+}
 
 
     //外部データの読み込み
@@ -16,31 +26,37 @@ $(function () {
         var menu_data = data;
         $.get("js/message.json", function (data) {
             var message_data = data;
-
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
                 //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
-                    $('.enemy').html( < img src = "img/enemy1.jpg"
-                        alt = "tanaka" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    playSound("sound/battle1.mp3", "loop");
+
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy1.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 2) {
-                    $('.enemy').html( < img src = "img/enemy2.jpg"
-                        alt = "kimura" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy2.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 3) {
-                    $('.enemy').html( < img src = "img/enemy3.jpg"
-                        alt = "kuribayashi" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy3.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 4) {
-                    $('.enemy').html( < img src = "img/enemy4.jpg"
-                        alt = "yamazaki" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy4.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 5) {
-                    $('.enemy').html( < img src = "img/enemy5.jpg"
-                        alt = "kodama" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy5.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 }
 
                 //ロード画面表示→消去
@@ -111,21 +127,26 @@ $(function () {
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
-                    $('.enemy_result').text("グー");
-                    $('.win_lose').text("あいこ");
+                    $('.enemy_result').html('<img src="img/gu.png">');
+                    $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["gu"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["draw"]["gu"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["draw"]["gu"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["draw"]["gu"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["draw"]["gu"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["draw"]["gu"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["draw"]["gu"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["draw"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                         $('.start_bt').hide();
@@ -133,21 +154,26 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 2) {
-                    $('.enemy_result').text("チョキ");
-                    $('.win_lose').text("勝ち");
+                    $('.enemy_result').html('<img src="img/cho.png">');
+                    $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["win"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["win"]["gu"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["win"]["gu"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["win"]["gu"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["win"]["gu"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["win"]["gu"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["win"]["gu"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["win"]["gu"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["win"]["item"]);
                         $('.start_bt').hide();
@@ -155,21 +181,26 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 3) {
-                    $('.enemy_result').text("パー");
-                    $('.win_lose').text("負け");
+                    $('.enemy_result').html('<img src="img/pa.png">');
+                    $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["lose"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["lose"]["gu"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["lose"]["gu"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["lose"]["gu"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["lose"]["gu"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["lose"]["gu"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["lose"]["gu"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["lose"]["gu"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
                         $('.start_bt').hide();
@@ -184,21 +215,26 @@ $(function () {
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
-                    $('.enemy_result').text("グー");
-                    $('.win_lose').text("負け");
+                    $('.enemy_result').html('<img src="img/gu.png">');
+                    $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["lose"]["choki"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["lose"]["choki"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["lose"]["choki"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["lose"]["choki"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["lose"]["choki"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["lose"]["choki"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["lose"]["choki"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["lose"]["choki"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
                         $('.start_bt').hide();
@@ -206,21 +242,26 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 2) {
-                    $('.enemy_result').text("チョキ");
-                    $('.win_lose').text("あいこ");
+                    $('.enemy_result').html('<img src="img/cho.png">');
+                    $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["draw"]["choki"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["choki"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["draw"]["choki"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["draw"]["choki"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["draw"]["choki"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["draw"]["choki"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["draw"]["choki"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["draw"]["choki"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["draw"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                         $('.start_bt').hide();
@@ -228,21 +269,26 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 3) {
-                    $('.enemy_result').text("パー");
-                    $('.win_lose').text("勝ち");
+                    $('.enemy_result').html('<img src="img/pa.png">');
+                    $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["win"]["choki"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["win"]["choki"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["win"]["choki"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["win"]["choki"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["win"]["choki"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["win"]["choki"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["win"]["choki"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["win"]["choki"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["win"]["item"]);
                         $('.start_bt').hide();
@@ -257,21 +303,26 @@ $(function () {
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
-                    $('.enemy_result').text("グー");
-                    $('.win_lose').text("勝ち");
+                    $('.enemy_result').html('<img src="img/gu.png">');
+                    $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["win"]["par"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["win"]["par"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["win"]["par"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["win"]["par"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["win"]["par"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["win"]["par"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["win"]["par"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["win"]["par"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["win"]["item"]);
                         $('.start_bt').hide();
@@ -279,21 +330,26 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 2) {
-                    $('.enemy_result').text("チョキ");
-                    $('.win_lose').text("負け");
+                    $('.enemy_result').html('<img src="img/cho.png">');
+                    $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["lose"]["par"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["lose"]["par"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["lose"]["par"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["lose"]["par"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["lose"]["par"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["lose"]["par"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["lose"]["par"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["lose"]["par"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
                         $('.start_bt').hide();
@@ -301,21 +357,26 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 3) {
-                    $('.enemy_result').text("パー");
-                    $('.win_lose').text("あいこ");
+                    $('.enemy_result').html('<img src="img/pa.png">');
+                    $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["draw"]["par"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["par"]["item"]);
                     } else if (j_stage == 2) {
+                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["draw"]["par"]["message"]);
                         $('.menu2').text(menu_data["menu2"]["draw"]["par"]["item"]);
                     } else if (j_stage == 3) {
+                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu3"]["draw"]["par"]["message"]);
                         $('.menu3').text(menu_data["menu3"]["draw"]["par"]["item"]);
                     } else if (j_stage == 4) {
+                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu4"]["draw"]["par"]["message"]);
                         $('.menu4').text(menu_data["menu4"]["draw"]["par"]["item"]);
                     } else if (j_stage == 5) {
+                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu5"]["draw"]["message"]);
                         $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                         $('.start_bt').hide();
