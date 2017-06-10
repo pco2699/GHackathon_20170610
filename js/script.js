@@ -7,7 +7,23 @@ $(function () {
 
     //スタートボタンでじゃんけんウインドウ表示
     $('.start_bt').on('click', function () {
+        //敵の種類を選ぶ
+        var enemy = Math.floor(Math.random() * 3 + 1);
+        if (com == 1) {
+            $('.enemy').html('敵1')
+            $('.enemy_txt').html('神は死んだ')
+        } else if (com == 2) {
+            $('.enemy').html('敵2')
+            $('.enemy_txt').html('考えるのではなく感じるのだ')
+        } else if (com == 3) {
+            $('.enemy').html('敵3')
+            $('.enemy_txt').html('諦めたらそこで試合終了ですよ')
+        }
         $('.janken').fadeIn(1000);
+    });
+
+    $('.janken_finish').on('click', function () {
+        $('.janken').fadeOut(1000);
     });
 
 
