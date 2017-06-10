@@ -6,25 +6,20 @@ $(function () {
     });
 
 
-    //メニューの1-5番目カウント用
-    var j_stage = 1;
-    //データ格納用
-    var menu_data;
-    var message_data;
+
 
     //外部データの読み込み
     $.get("js/data.json", function (data) {
-        menu_data = data;
+        //メニューの1-5番目カウント用
+        var j_stage = 1;
+        //データ格納用
+        var menu_data = data;
         $.get("js/message.json", function (data) {
-            message_data = data;
-
+            var message_data = data;
 
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
-                //                var n = 1;
-                //                alert(message_data["ms" + n]);
-
-                //敵の種類を選ぶ
+                //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
                     $('.enemy').html('敵1')
