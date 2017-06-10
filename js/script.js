@@ -13,7 +13,8 @@ $(function () {
 
     $.get("js/data.json", function (data) {
         //メニューの1-5番目カウント用
-        menu_data = $.parseJSON(data);
+        // menu_data = $.parseJSON(data);
+        menu_data = data;
 
         //スタートボタンでじゃんけん開始
         $('.start_bt').on('click', function () {
