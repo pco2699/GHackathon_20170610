@@ -143,6 +143,10 @@
   display: block;
 }
 
+.none {
+  display: none;
+}
+
 /*じゃんけんウインドウ　*/
 .janken {
   display: none;
