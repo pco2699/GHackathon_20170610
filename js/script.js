@@ -22,6 +22,10 @@ $(function () {
         $('.janken').fadeIn(1000);
     });
 
+    $('.janken_win_kari').on('click', function () {
+        $('.janken_result').fadeIn(1000);
+    })
+
     $('.janken_finish').on('click', function () {
         $('.janken').fadeOut(1000);
     });
