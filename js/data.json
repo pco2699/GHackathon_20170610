@@ -1,231 +1,231 @@
 {
-  "menu1": {
-    "win": {
-      "gu": {
-        "item": "牛肉",
-        "message": "あなたは「牛肉」を手に入れた",
-        "image": "<img src=\"img/1/1-w-g.jpeg\">"
-      },
-      "choki": {
-        "item": "鯛",
-        "message": "あなたは「鯛」を手に入れた",
-        "image": "<img src=\"img/1/1-w-c.jpeg\">"
-      },
-      "par": {
-        "item": "蟹",
-        "message": "あなたは「蟹」を手に入れた",
-        "image": "<img src=\"img/1/1-w-p.jpeg\">"
-      }
+    "menu1": {
+        "win": {
+            "gu": {
+                "item": "牛肉",
+                "message": "あなたは「牛肉」を手に入れた",
+                "image": "<img src=\"img/1/1-w-g.jpeg\">"
+            },
+            "choki": {
+                "item": "鯛",
+                "message": "あなたは「鯛」を手に入れた",
+                "image": "<img src=\"img/1/1-w-c.jpg\">"
+            },
+            "par": {
+                "item": "蟹",
+                "message": "あなたは「蟹」を手に入れた",
+                "image": "<img src=\"img/1/1-w-p.jpeg\">"
+            }
+        },
+        "draw": {
+            "gu": {
+                "item": "鶏肉",
+                "message": "あなたは「鶏肉」を手に入れた",
+                "image": "<img src=\"img/1/1-d-g.jpeg\">"
+            },
+            "choki": {
+                "item": "鮭",
+                "message": "あなたは「鮭」を手に入れた",
+                "image": "<img src=\"img/1/1-d-c.jpeg\">"
+            },
+            "par": {
+                "item": "海老",
+                "message": "あなたは「海老」を手に入れた",
+                "image": "<img src=\"img/1/1-d-p.jpeg\">"
+            }
+        },
+        "lose": {
+            "gu": {
+                "item": "とうふ",
+                "message": "あなたは「とうふ」手に入れた",
+                "image": "<img src=\"img/1/1-l-g.jpeg\">"
+            },
+            "choki": {
+                "item": "しらす",
+                "message": "あなたは「しらす」を手に入れた",
+                "image": "<img src=\"img/1/1-l-c.jpeg\">"
+            },
+            "par": {
+                "item": "しじみ",
+                "message": "あなたは「しじみ」を手に入れた",
+                "image": "<img src=\"img/1/1-l-p.jpeg\">"
+            }
+        }
     },
-    "draw": {
-      "gu": {
-        "item": "鶏肉",
-        "message": "あなたは「鶏肉」を手に入れた",
-        "image": "<img src=\"img/1/1-d-g.jpeg\">"
-      },
-      "choki": {
-        "item": "鮭",
-        "message": "あなたは「鮭」を手に入れた",
-        "image": "<img src=\"img/1/1-d-c.jpeg\">"
-      },
-      "par": {
-        "item": "海老",
-        "message": "あなたは「海老」を手に入れた",
-        "image": "<img src=\"img/1/1-d-p.jpeg\">"
-      }
+    "menu2": {
+        "win": {
+            "gu": {
+                "item": "モッツァレラチーズ × ルッコラ",
+                "message": "あなたは「モッツァレラチーズ × ルッコラ」を手に入れた",
+                "image": "<img src=\"img/2/2-w-g.png\">"
+            },
+            "choki": {
+                "item": "ズッキーニ × パプリカ",
+                "message": "あなたは「ズッキーニ × パプリカ」を手に入れた",
+                "image": "<img src=\"img/2/2-w-c.png\">"
+            },
+            "par": {
+                "item": "ゴーヤ × トマト",
+                "message": "あなたは「ゴーヤ × トマト」を手に入れた",
+                "image": "<img src=\"img/2/2-w-p.png\">"
+            }
+        },
+        "draw": {
+            "gu": {
+                "item": "白菜 × 人参",
+                "message": "あなたは「白菜 × 人参」を手に入れた",
+                "image": "<img src=\"img/2/2-d-g.png\">"
+            },
+            "choki": {
+                "item": "ホウレン草 × 大根",
+                "message": "あなたは「ホウレン草 × 大根」を手に入れた",
+                "image": "<img src=\"img/2/2-d-c.png\">"
+            },
+            "par": {
+                "item": "ジャガイモ × 玉ねぎ",
+                "message": "あなたは「ジャガイモ × 玉ねぎ」を手に入れた",
+                "image": "<img src=\"img/2/2-d-p.png\">"
+            }
+        },
+        "lose": {
+            "gu": {
+                "item": "エノキダケ × 白滝",
+                "message": "あなたは「エノキダケ × 白滝」を手に入れた",
+                "image": "<img src=\"img/2/2-l-g.png\">"
+            },
+            "choki": {
+                "item": "カイワレ × コンニャク",
+                "message": "あなたは「カイワレ × コンニャク」を手に入れた",
+                "image": "<img src=\"img/2/2-l-c.png\">"
+            },
+            "par": {
+                "item": "もやし × ふ",
+                "message": "あなたは「もやし × ふ」を手に入れた",
+                "image": "<img src=\"img/2/2-l-p.png\">"
+            }
+        }
     },
-    "lose": {
-      "gu": {
-        "item": "とうふ",
-        "message": "あなたは「とうふ」手に入れた",
-        "image": "<img src=\"img/1/1-l-g.jpeg\">"
-      },
-      "choki": {
-        "item": "しらす",
-        "message": "あなたは「しらす」を手に入れた",
-        "image": "<img src=\"img/1/1-l-c.jpeg\">"
-      },
-      "par": {
-        "item": "しじみ",
-        "message": "あなたは「しじみ」を手に入れた",
-        "image": "<img src=\"img/1/1-l-p.jpeg\">"
-      }
+    "menu3": {
+        "win": {
+            "gu": {
+                "item": "燻す",
+                "message": "あなたは「燻す」を手に入れた",
+                "image": "<img src=\"img/3/3-w-g.jpeg\">"
+            },
+            "choki": {
+                "item": "揚げる",
+                "message": "あなたは「揚げる」を手に入れた",
+                "image": "<img src=\"img/3/3-w-c.jpeg\">"
+            },
+            "par": {
+                "item": "炙る",
+                "message": "あなたは「炙る」を手に入れた",
+                "image": "<img src=\"img/3/3-w-p.jpeg\">"
+            }
+        },
+        "draw": {
+            "gu": {
+                "item": "炒める",
+                "message": "あなたは「炒める」を手に入れた",
+                "image": "<img src=\"img/3/3-d-g.jpeg\">"
+            },
+            "choki": {
+                "item": "煮る",
+                "message": "あなたは「煮る」を手に入れた",
+                "image": "<img src=\"img/3/3-d-c.jpeg\">"
+            },
+            "par": {
+                "item": "蒸す",
+                "message": "あなたは「蒸す」を手に入れた",
+                "image": "<img src=\"img/3/3-d-p.jpeg\">"
+            }
+        },
+        "lose": {
+            "gu": {
+                "item": "焼く",
+                "message": "あなたは「焼く」を手に入れた",
+                "image": "<img src=\"img/3/3-l-g.jpeg\">"
+            },
+            "choki": {
+                "item": "炊く",
+                "message": "あなたは「炊く」を手に入れた",
+                "image": "<img src=\"img/3/3-l-c.jpeg\">"
+            },
+            "par": {
+                "item": "レンジでチン",
+                "message": "あなたは「レンジでチン」を手に入れた",
+                "image": "<img src=\"img/3/3-l-p.jpeg\">"
+            }
+        }
+    },
+    "menu4": {
+        "win": {
+            "gu": {
+                "item": "わさび × 醤油",
+                "message": "あなたは「わさび × 醤油」を手に入れた",
+                "image": "<img src=\"img/4/4-w-g.png\">"
+            },
+            "choki": {
+                "item": "バター × ケチャップ",
+                "message": "あなたは「バター × ケチャップ」を手に入れた",
+                "image": "<img src=\"img/4/4-w-c.png\">"
+            },
+            "par": {
+                "item": "味覇 × 片栗粉",
+                "message": "あなたは「味覇 × 片栗粉」を手に入れた",
+                "image": "<img src=\"img/4/4-w-p.png\">"
+            }
+        },
+        "draw": {
+            "gu": {
+                "item": "味噌 × マヨネーズ",
+                "message": "あなたは「味噌 × マヨネーズ」を手に入れた",
+                "image": "<img src=\"img/4/4-d-g.png\">"
+            },
+            "choki": {
+                "item": "ハーブ × ニンニク",
+                "message": "あなたは「ハーブ × ニンニク」を手に入れた",
+                "image": "<img src=\"img/4/4-d-c.png\">"
+            },
+            "par": {
+                "item": "オイスターソース × 卵",
+                "message": "あなたは「オイスターソース × 卵」を手に入れた",
+                "image": "<img src=\"img/4/4-d-p.png\">"
+            }
+        },
+        "lose": {
+            "gu": {
+                "item": "酢 × 綿あめ",
+                "message": "あなたは「酢 × 綿あめ」を手に入れた",
+                "image": "<img src=\"img/4/4-l-g.png\">"
+            },
+            "choki": {
+                "item": "コーラ × マシュマロ",
+                "message": "あなたは「コーラ × マシュマロ」を手に入れた",
+                "image": "<img src=\"img/4/4-l-c.png\">"
+            },
+            "par": {
+                "item": "唐辛子 × 山椒",
+                "message": "あなたは「唐辛子 × 山椒」を手に入れた",
+                "image": "<img src=\"img/4/4-l-p.png\">"
+            }
+        }
+    },
+    "menu5": {
+        "win": {
+            "item": "XO醤",
+            "message": "あなたは「XO醤」を手に入れた",
+            "image": "<img src=\"img/5/5-w.jpeg\">"
+        },
+        "draw": {
+            "item": "コチュ醤",
+            "message": "あなたは「コチュ醤」を手に入れた",
+            "image": "<img src=\"img/5/5-d.jpeg\">"
+        },
+        "lose": {
+            "item": "豆板醤",
+            "message": "あなたは「豆板醤」を手に入れた",
+            "image": "<img src=\"img/5/5-l.jpeg\">"
+        }
     }
-  },
-  "menu2": {
-    "win": {
-      "gu": {
-        "item": "モッツァレラチーズ × ルッコラ",
-        "message": "あなたは「モッツァレラチーズ × ルッコラ」を手に入れた",
-        "image": "<img src=\"img/2/2-w-g.png\">"
-      },
-      "choki": {
-        "item": "ズッキーニ × パプリカ",
-        "message": "あなたは「ズッキーニ × パプリカ」を手に入れた",
-        "image": "<img src=\"img/2/2-w-c.png\">"
-      },
-      "par": {
-        "item": "ゴーヤ × トマト",
-        "message": "あなたは「ゴーヤ × トマト」を手に入れた",
-        "image": "<img src=\"img/2/2-w-p.png\">"
-      }
-    },
-    "draw": {
-      "gu": {
-        "item": "白菜 × 人参",
-        "message": "あなたは「白菜 × 人参」を手に入れた",
-        "image": "<img src=\"img/2/2-d-g.png\">"
-      },
-      "choki": {
-        "item": "ホウレン草 × 大根",
-        "message": "あなたは「ホウレン草 × 大根」を手に入れた",
-        "image": "<img src=\"img/2/2-d-c.png\">"
-      },
-      "par": {
-        "item": "ジャガイモ × 玉ねぎ",
-        "message": "あなたは「ジャガイモ × 玉ねぎ」を手に入れた",
-        "image": "<img src=\"img/2/2-d-p.png\">"
-      }
-    },
-    "lose": {
-      "gu": {
-        "item": "エノキダケ × 白滝",
-        "message": "あなたは「エノキダケ × 白滝」を手に入れた",
-        "image": "<img src=\"img/2/2-l-g.png\">"
-      },
-      "choki": {
-        "item": "カイワレ × コンニャク",
-        "message": "あなたは「カイワレ × コンニャク」を手に入れた",
-        "image": "<img src=\"img/2/2-l-c.png\">"
-      },
-      "par": {
-        "item": "もやし × ふ",
-        "message": "あなたは「もやし × ふ」を手に入れた",
-        "image": "<img src=\"img/2/2-l-p.png\">"
-      }
-    }
-  },
-  "menu3": {
-    "win": {
-      "gu": {
-        "item": "燻す",
-        "message": "あなたは「燻す」を手に入れた",
-        "image": "<img src=\"img/3/3-w-g.jpeg\">"
-      },
-      "choki": {
-        "item": "揚げる",
-        "message": "あなたは「揚げる」を手に入れた",
-        "image": "<img src=\"img/3/3-w-c.jpeg\">"
-      },
-      "par": {
-        "item": "炙る",
-        "message": "あなたは「炙る」を手に入れた",
-        "image": "<img src=\"img/3/3-w-p.jpeg\">"
-      }
-    },
-    "draw": {
-      "gu": {
-        "item": "炒める",
-        "message": "あなたは「炒める」を手に入れた",
-        "image": "<img src=\"img/3/3-d-g.jpeg\">"
-      },
-      "choki": {
-        "item": "煮る",
-        "message": "あなたは「煮る」を手に入れた",
-        "image": "<img src=\"img/3/3-d-c.jpeg\">"
-      },
-      "par": {
-        "item": "蒸す",
-        "message": "あなたは「蒸す」を手に入れた",
-        "image": "<img src=\"img/3/3-d-p.jpeg\">"
-      }
-    },
-    "lose": {
-      "gu": {
-        "item": "焼く",
-        "message": "あなたは「焼く」を手に入れた",
-        "image": "<img src=\"img/3/3-l-g.jpeg\">"
-      },
-      "choki": {
-        "item": "炊く",
-        "message": "あなたは「炊く」を手に入れた",
-        "image": "<img src=\"img/3/3-l-c.jpeg\">"
-      },
-      "par": {
-        "item": "レンジでチン",
-        "message": "あなたは「レンジでチン」を手に入れた",
-        "image": "<img src=\"img/3/3-l-p.jpeg\">"
-      }
-    }
-  },
-  "menu4": {
-    "win": {
-      "gu": {
-        "item": "わさび × 醤油",
-        "message": "あなたは「わさび × 醤油」を手に入れた",
-        "image": "<img src=\"img/4/4-w-g.png\">"
-      },
-      "choki": {
-        "item": "バター × ケチャップ",
-        "message": "あなたは「バター × ケチャップ」を手に入れた",
-        "image": "<img src=\"img/4/4-w-c.png\">"
-      },
-      "par": {
-        "item": "味覇 × 片栗粉",
-        "message": "あなたは「味覇 × 片栗粉」を手に入れた",
-        "image": "<img src=\"img/4/4-w-p.png\">"
-      }
-    },
-    "draw": {
-      "gu": {
-        "item": "味噌 × マヨネーズ",
-        "message": "あなたは「味噌 × マヨネーズ」を手に入れた",
-        "image": "<img src=\"img/4/4-d-g.png\">"
-      },
-      "choki": {
-        "item": "ハーブ × ニンニク",
-        "message": "あなたは「ハーブ × ニンニク」を手に入れた",
-        "image": "<img src=\"img/4/4-d-c.png\">"
-      },
-      "par": {
-        "item": "オイスターソース × 卵",
-        "message": "あなたは「オイスターソース × 卵」を手に入れた",
-        "image": "<img src=\"img/4/4-d-p.png\">"
-      }
-    },
-    "lose": {
-      "gu": {
-        "item": "酢 × 綿あめ",
-        "message": "あなたは「酢 × 綿あめ」を手に入れた",
-        "image": "<img src=\"img/4/4-l-g.png\">"
-      },
-      "choki": {
-        "item": "コーラ × マシュマロ",
-        "message": "あなたは「コーラ × マシュマロ」を手に入れた",
-        "image": "<img src=\"img/4/4-l-c.png\">"
-      },
-      "par": {
-        "item": "唐辛子 × 山椒",
-        "message": "あなたは「唐辛子 × 山椒」を手に入れた",
-        "image": "<img src=\"img/4/4-l-p.png\">"
-      }
-    }
-  },
-  "menu5": {
-    "win": {
-        "item": "XO醤",
-        "message": "あなたは「XO醤」を手に入れた",
-        "image": "<img src=\"img/5/5-w.jpeg\">"
-    },
-    "draw": {
-        "item": "コチュ醤",
-        "message": "あなたは「コチュ醤」を手に入れた",
-        "image": "<img src=\"img/5/5-d.jpeg\">"
-    },
-    "lose": {
-        "item": "豆板醤",
-        "message": "あなたは「豆板醤」を手に入れた",
-        "image": "<img src=\"img/5/5-l.jpeg\">"
-    }
-  }
 }
