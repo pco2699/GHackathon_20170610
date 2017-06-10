@@ -38,22 +38,26 @@ $(function () {
                 $('.enemy_txt').html('我が生涯に一片の悔い無し')
             }
 
+            //ロード画面表示→消去
+            $('.dragon').fadeIn(300);
+            $('.dragon').delay(600).fadeIn(300);
+
             //じゃんけんウインドウ表示
-            $('.janken').fadeIn(500);
+            $('.janken').delay(900).fadeIn(300);
         });
 
         //拳醤ボタンを押すと結果表示，閉じるボタンで消去
         $('.explain_bt').on('click', function () {
-            $('.explain').fadeIn(500);
+            $('.explain').fadeIn(300);
         });
         $('.explain_close').on('click', function () {
-            $('.explain').fadeOut(500);
+            $('.explain').fadeOut(300);
         });
 
         //終了を押すとウインドウ消去
         $('.janken_finish').on('click', function () {
-            $('.janken').fadeOut(500);
-            $('.janken_result').fadeOut(500);
+            $('.janken').fadeOut(300);
+            $('.janken_result').fadeOut(300);
         });
 
 
@@ -117,7 +121,7 @@ $(function () {
                     $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                     $('.start_bt').hide();
                 }
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             } else if (com == 2) {
                 $('.enemy_result').text("チョキ");
@@ -140,7 +144,7 @@ $(function () {
                     $('.start_bt').hide();
                 }
 
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             } else if (com == 3) {
                 $('.enemy_result').text("パー");
@@ -163,7 +167,7 @@ $(function () {
                     $('.start_bt').hide();
                 }
 
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             }
         });
@@ -193,7 +197,7 @@ $(function () {
                     $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
                     $('.start_bt').hide();
                 }
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             } else if (com == 2) {
                 $('.enemy_result').text("チョキ");
@@ -215,7 +219,7 @@ $(function () {
                     $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                     $('.start_bt').hide();
                 }
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             } else if (com == 3) {
                 $('.enemy_result').text("パー");
@@ -237,7 +241,7 @@ $(function () {
                     $('.menu5').text(menu_data["menu5"]["win"]["item"]);
                     $('.start_bt').hide();
                 }
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             }
         });
@@ -265,7 +269,7 @@ $(function () {
                     $('.menu5').text(menu_data["menu5"]["win"]["item"]);
                     $('.start_bt').hide();
                 }
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             } else if (com == 2) {
                 $('.enemy_result').text("チョキ");
@@ -287,7 +291,7 @@ $(function () {
                     $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
                     $('.start_bt').hide();
                 }
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             } else if (com == 3) {
                 $('.enemy_result').text("パー");
@@ -309,7 +313,7 @@ $(function () {
                     $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                     $('.start_bt').hide();
                 }
-                $('.janken_result').fadeIn(500);
+                $('.janken_result').fadeIn(300);
                 j_stage++;
             }
         });
