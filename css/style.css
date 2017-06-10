@@ -144,6 +144,10 @@ img {
   width: 100%;
 }
 
+.height100 {
+  height: 100%;
+}
+
 .wrap {
   /*height: 100vh;*/
   max-width: 400px;
@@ -274,7 +278,7 @@ button {
   position: absolute;
   top: 5px;
   right: 0;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 60px;
+  height: 42px;
+  overflow: hidden;
 }
