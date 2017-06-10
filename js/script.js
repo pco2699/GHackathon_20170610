@@ -5,7 +5,17 @@ $(function () {
         var w = $(window).width();
     });
 
+function playSound(src, loop) {
+    // src = 再生する音楽のパス
+    // loop = loopする or not
 
+    if(loop === "noloop"){
+        $(".audio").removeAttr("loop");
+    }
+    $(".audio").removeAttr("src");
+    $(".audio").attr("src", src);
+    $(".audio")[0].play();
+}
 
 
     //外部データの読み込み
@@ -16,12 +26,13 @@ $(function () {
         var menu_data = data;
         $.get("js/message.json", function (data) {
             var message_data = data;
-
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
                 //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
+                    playSound("sound/battle1.mp3", "loop");
+
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy1.jpg")'
                     });
