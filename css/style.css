@@ -1,7 +1,51 @@
 /* ------style.css ------- */
 
-.align-center {
+.radius {
+  border-radius: 4px;
+}
 
+/* マージン */
+.margin_center {
+  margin: 0 auto;
+}
+
+.margin_top_10 {
+  margin-top: 10px;
+}
+
+.margin_top_20 {
+  margin-top: 20px;
+}
+
+.margin_top_30 {
+  margin-top: 30px;
+}
+
+.margin_bottom_10 {
+  margin-bottom: 10px;
+}
+
+.margin_bottom_20 {
+  margin-bottom: 20px;
+}
+
+.margin_bottom_30 {
+  margin-bottom: 30px;
+}
+
+.margin_side_10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.margin_side_20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.block {
+  display: block;
 }
 
 .relative {
@@ -16,6 +60,14 @@
 /*色系*/
 .bg_red {
   background: red;
+}
+
+.bg_off_white {
+  background: #eee;
+}
+
+.bg_yellow {
+  background: #ffec44;
 }
 
 /*じゃんけんウインドウ　*/
@@ -47,4 +99,12 @@
   width: 150px;
   margin-left: -75px;
   height: 100px;
+}
+
+
+/*個別　*/
+
+button {
+  width: 150px;
+  padding: 20px;
 }
