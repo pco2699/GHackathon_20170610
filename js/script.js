@@ -117,8 +117,7 @@ $(function () {
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
                     $('.enemy_result').text("グー");
-                    $('.win_lose').html('<img src="img/win.png">');
-                    //                    $('.win_lose').text("あいこ");
+                    $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["gu"]["item"]);
@@ -140,7 +139,7 @@ $(function () {
                     j_stage++;
                 } else if (com == 2) {
                     $('.enemy_result').text("チョキ");
-                    $('.win_lose').text("勝ち");
+                    $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["win"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["win"]["gu"]["item"]);
@@ -162,7 +161,7 @@ $(function () {
                     j_stage++;
                 } else if (com == 3) {
                     $('.enemy_result').text("パー");
-                    $('.win_lose').text("負け");
+                    $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["lose"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["lose"]["gu"]["item"]);
@@ -191,7 +190,7 @@ $(function () {
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
                     $('.enemy_result').text("グー");
-                    $('.win_lose').text("負け");
+                    $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["lose"]["choki"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["lose"]["choki"]["item"]);
@@ -213,7 +212,7 @@ $(function () {
                     j_stage++;
                 } else if (com == 2) {
                     $('.enemy_result').text("チョキ");
-                    $('.win_lose').text("あいこ");
+                    $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["draw"]["choki"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["choki"]["item"]);
@@ -235,7 +234,7 @@ $(function () {
                     j_stage++;
                 } else if (com == 3) {
                     $('.enemy_result').text("パー");
-                    $('.win_lose').text("勝ち");
+                    $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["win"]["choki"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["win"]["choki"]["item"]);
@@ -264,7 +263,7 @@ $(function () {
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
                     $('.enemy_result').text("グー");
-                    $('.win_lose').text("勝ち");
+                    $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["win"]["par"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["win"]["par"]["item"]);
@@ -286,7 +285,7 @@ $(function () {
                     j_stage++;
                 } else if (com == 2) {
                     $('.enemy_result').text("チョキ");
-                    $('.win_lose').text("負け");
+                    $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["lose"]["par"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["lose"]["par"]["item"]);
@@ -308,7 +307,7 @@ $(function () {
                     j_stage++;
                 } else if (com == 3) {
                     $('.enemy_result').text("パー");
-                    $('.win_lose').text("あいこ");
+                    $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["draw"]["par"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["par"]["item"]);
