@@ -1,0 +1,31 @@
+/* ------style.css ------- */
+
+.align-center {
+
+}
+
+.wrap {
+  max-width: 400px;
+  box-shadow: 10px 10px #aaa;
+}
+
+/*色系*/
+.bg-red {
+  background: red;
+}
+
+/*じゃんけんウインドウ　*/
+.janken {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background: #f9f9f9;
+  width: 100%;
+  height: 100%;
+}
+
+.janken-inner {
+  width: 400px;
+  background: white;
+  height: 100%;
+}
