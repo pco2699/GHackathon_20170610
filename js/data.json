@@ -3,21 +3,25 @@
     "win": {
       "gu": {
         "item": "牛肉",
-        "message": "あなたは「牛肉」を手に入れた"
+        "message": "あなたは「牛肉」を手に入れた",
+        "image": '<img src="img/1/1-w-g.jpeg">'
       },
       "choki": {
         "item": "鯛",
-        "message": "あなたは「鯛」を手に入れた"
+        "message": "あなたは「鯛」を手に入れた",
+        "image": '<img src="img/1/1-w-c.jpeg">'
       },
       "par": {
         "item": "蟹",
-        "message": "あなたは「蟹」を手に入れた"
+        "message": "あなたは「蟹」を手に入れた",
+        "image": '<img src="img/1/1-w-p.jpeg">'
       }
     },
     "draw": {
       "gu": {
         "item": "鶏肉",
-        "message": "あなたは「鶏肉」を手に入れた"
+        "message": "あなたは「鶏肉」を手に入れた",
+        "image": '<img src="img/1/1-d-g.jpeg">'
       },
       "choki": {
         "item": "鮭",
