@@ -2,77 +2,191 @@
   "menu1": {
     "win": {
       "gu": {
-        "zairyo": "牛肉",
-        "message": "あなたは牛肉を手に入れた" // data["menu1"]["win"]["gu"]["message"] -> あなたは牛肉を手に入れた
+        "item": "牛肉",
+        "message": "あなたは「牛肉」を手に入れた" // data["menu1"]["win"]["gu"]["message"] -> あなたは牛肉を手に入れた
       },
-      "choki": "tai",
-      "par": "kani"
+      "choki": {
+        "item": "鯛",
+        "message": "あなたは「鯛」を手に入れた"
+      },
+      "par": {
+        "item": "蟹",
+        "message": "あなたは「蟹」を手に入れた"
+      }
     },
     "draw": {
-      "gu": "tori",
-      "choki": "shake",
-      "par": "ebi"
+      "gu": {
+        "item": "鶏肉",
+        "message": "あなたは「鶏肉」を手に入れた"
+      },
+      "choki": {
+        "item": "鮭",
+        "message": "あなたは「鮭」を手に入れた"
+      },
+      "par": {
+        "item": "海老",
+        "message": "あなたは「海老」を手に入れた"
+      }
     },
     "lose": {
-      "gu": "tofu",
-      "choki": "sirasu",
-      "par": "sijimi"
+      "gu": {
+        "item": "とうふ",
+        "message": "あなたはを「とうふ」手に入れた"
+      },
+      "choki": {
+        "item": "しらす",
+        "message": "あなたは「しらす」を手に入れた"
+      },
+      "par": {
+        "item": "しじみ",
+        "message": "あなたは「しじみ」を手に入れた"
+      }
     }
   },
   "menu2": {
     "win": {
-      "gu": "moz-ruk",
-      "choki": "zuk-pap",
-      "par": "goy-tom"
+      "gu": {
+        "item": "モッツァレラチーズXルッコラ",
+        "message": "あなたは「モッツァレラチーズXルッコラ」を手に入れた"
+      },
+      "choki": {
+        "item": "ズッキーニXパプリカ",
+        "message": "あなたは「ズッキーニXパプリカ」を手に入れた"
+      },
+      "par": {
+        "item": "ゴーヤXトマト",
+        "message": "あなたは「ゴーヤXトマト」を手に入れた"
+      }
     },
     "draw": {
-      "gu": "hak-nin",
-      "choki": "jag-tam",
-      "par": "hou-dai"
+      "gu": {
+        "item": "白菜X人参",
+        "message": "あなたは「白菜X人参」を手に入れた"
+      },
+      "choki": {
+        "item": "ホウレン草X大根",
+        "message": "あなたは「ホウレン草X大根」を手に入れた"
+      },
+      "par": {
+        "item": "ジャガイモX玉ねぎ",
+        "message": "あなたは「ジャガイモX玉ねぎ」を手に入れた"
+      }
     },
     "lose": {
-      "gu": "eno-sir",
-      "choki": "kai-kon",
-      "par": "moy-fu"
+      "gu": {
+        "item": "エノキダケX白滝",
+        "message": "あなたは「エノキダケX白滝」を手に入れた"
+      },
+      "choki": {
+        "item": "カイワレXコンニャク",
+        "message": "あなたは「カイワレXコンニャク」を手に入れた"
+      },
+      "par": {
+        "item": "もやしXふ",
+        "message": "あなたは「もやしxふ」を手に入れた"
+      }
     }
   },
   "menu3": {
     "win": {
-      "gu": "ibusu",
-      "choki": "ageru",
-      "par": "aburu"
+      "gu": {
+        "item": "燻す",
+        "message": "あなたは「燻す」を手に入れた"
+      },
+      "choki": {
+        "item": "揚げる",
+        "message": "あなたは「揚げる」を手に入れた"
+      },
+      "par": {
+        "item": "炙る",
+        "message": "あなたは「炙る」を手に入れた"
+      }
     },
     "draw": {
-      "gu": "itameru",
-      "choki": "niru",
-      "par": "musu"
+      "gu": {
+        "item": "炒める",
+        "message": "あなたは「炒める」を手に入れた"
+      },
+      "choki": {
+        "item": "煮る",
+        "message": "あなたは「煮る」を手に入れた"
+      },
+      "par": {
+        "item": "蒸す",
+        "message": "あなたは「蒸す」を手に入れた"
+      }
     },
     "lose": {
-      "gu": "yaku",
-      "choki": "taku",
-      "par": "renji"
+      "gu": {
+        "item": "焼く",
+        "message": "あなたは「焼く」を手に入れた"
+      },
+      "choki": {
+        "item": "炊く",
+        "message": "あなたは「炊く」を手に入れた"
+      },
+      "par": {
+        "item": "レンジでチン",
+        "message": "あなたは「レンジでチン」を手に入れた"
+      }
     }
   },
   "menu4": {
     "win": {
-      "gu": "was-sho",
-      "choki": "but-kch",
-      "par": "wei-kat"
+      "gu": {
+        "item": "わさびX醤油",
+        "message": "あなたは「わさびX醤油」を手に入れた"
+      },
+      "choki": {
+        "item": "バターXケチャップ",
+        "message": "あなたは「バターXケチャップ」を手に入れた"
+      },
+      "par": {
+        "item": "味覇X片栗粉",
+        "message": "あなたは「味覇X片栗粉」を手に入れた"
+      }
     },
     "draw": {
-      "gu": "mis-may",
-      "choki": "hrb-nin",
-      "par": "oys-egg"
+      "gu": {
+        "item": "味噌Xマヨネーズ",
+        "message": "あなたは「味噌Xマヨネーズ」を手に入れた"
+      },
+      "choki": {
+        "item": "ハーブXニンニク",
+        "message": "あなたは「ハーブXニンニク」を手に入れた"
+      },
+      "par": {
+        "item": "オイスターソースX卵",
+        "message": "あなたは「オイスターソースX卵」を手に入れた"
+      }
     },
     "lose": {
-      "gu": "osu-wat",
-      "choki": "col-mas",
-      "par": "tou-san"
+      "gu": {
+        "item": "酢X綿あめ",
+        "message": "あなたは「酢X綿あめ」を手に入れた"
+      },
+      "choki": {
+        "item": "コーラXマシュマロ",
+        "message": "あなたは「コーラXマシュマロ」を手に入れた"
+      },
+      "par": {
+        "item": "唐辛子X山椒",
+        "message": "あなたは「唐辛子X山椒」を手に入れた"
+      }
     }
   },
   "menu5": {
-    "win": "xo",
-    "draw": "kochu",
-    "lose": "touban"
+    "win": {
+        "item": "XO醤",
+        "message": "あなたは「XO醤」を手に入れた"
+    },
+    "draw": {
+        "item": "コチュ醤",
+        "message": "あなたは「コチュ醤」を手に入れた"
+    },
+    "lose": {
+        "item": "豆板醤",
+        "message": "あなたは「豆板醤」を手に入れた"
+    }
   }
 }
