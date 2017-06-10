@@ -39,8 +39,6 @@ $(function () {
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 2) {
-                    $('.explain_bt').hide();
-                    $('.start_bt').text('つづける。');
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy2.jpg")'
                     });
@@ -161,6 +159,9 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     j_stage++;
+                    $('.explain_bt').hide();
+                    $('.start_bt').text('つづける。');
+
                 } else if (com == 2) {
                     $('.enemy_result').html('<img src="img/cho.png">');
                     $('.win_lose').html('<img src="img/win.png">');
@@ -193,6 +194,9 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     j_stage++;
+                    $('.explain_bt').hide();
+                    $('.start_bt').text('つづける。');
+
                 } else if (com == 3) {
                     $('.enemy_result').html('<img src="img/pa.png">');
                     $('.win_lose').html('<img src="img/lose.png">');
@@ -225,6 +229,9 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     j_stage++;
+                    $('.explain_bt').hide();
+                    $('.start_bt').text('つづける。');
+
                 }
             });
 
