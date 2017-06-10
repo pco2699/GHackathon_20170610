@@ -34,12 +34,13 @@ $(function () {
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
                     playSound("sound/battle1.mp3", "loop");
-
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy1.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 2) {
+                    $('.explain_bt').hide();
+                    $('.start_bt').text('つづける。');
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy2.jpg")'
                     });
