@@ -159,7 +159,7 @@ img {
   display: block;
 }
 
-. bold {
+.bold {
   font-weight: 900;
 }
 
@@ -237,6 +237,7 @@ button {
   border-bottom: 1px solid red;
   font-size: 16px;
   padding: 12px 0 1px;
+  padding-left: 20px;
 }
 
 .hand {
@@ -252,7 +253,7 @@ button {
 .enemy {
   border: 2px solid red;
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 
 .hands_outer {
