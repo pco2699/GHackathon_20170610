@@ -3,7 +3,7 @@
     "win": {
       "gu": {
         "item": "牛肉",
-        "message": "あなたは「牛肉」を手に入れた" // data["menu1"]["win"]["gu"]["message"] -> あなたは牛肉を手に入れた
+        "message": "あなたは「牛肉」を手に入れた"
       },
       "choki": {
         "item": "鯛",
