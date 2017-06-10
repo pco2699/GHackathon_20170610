@@ -9,13 +9,13 @@ $(function () {
     $('.start_bt').on('click', function () {
         //敵の種類を選ぶ
         var enemy = Math.floor(Math.random() * 3 + 1);
-        if (com == 1) {
+        if (enemy == 1) {
             $('.enemy').html('敵1')
             $('.enemy_txt').html('神は死んだ')
-        } else if (com == 2) {
+        } else if (enemy == 2) {
             $('.enemy').html('敵2')
             $('.enemy_txt').html('考えるのではなく感じるのだ')
-        } else if (com == 3) {
+        } else if (enemy == 3) {
             $('.enemy').html('敵3')
             $('.enemy_txt').html('諦めたらそこで試合終了ですよ')
         }
