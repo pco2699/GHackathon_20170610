@@ -82,7 +82,7 @@ $(function () {
 
         //じゃんけん勝敗判定関数
         $('.gu_btn').on("click", function () {
-            alert(menu_data["menu1"]["win"]["gu"]["message"]);
+            //            alert(menu_data["menu1"]["win"]["gu"]["message"]);
 
             var humanGu = 1;
             //敵の手を乱数で決める
