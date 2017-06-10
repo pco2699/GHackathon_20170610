@@ -24,7 +24,9 @@ $(function () {
         var j_stage = 1;
         //データ格納用
         var menu_data = data;
+
         $.get("js/message.json", function (data) {
+
             var message_data = data;
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
