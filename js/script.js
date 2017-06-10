@@ -78,16 +78,19 @@ $(function () {
         var com = Math.floor(Math.random() * 3 + 1);
 
         if (com == 1) {
-            $('').text("グー");
-            $('.janken_result').text("あいこ");
+            $('.enemy_result').text("グー");
+            $('.win_lose').text("あいこ");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 2) {
-            $('').text("チョキ");
-            $('.janken_result').text("勝ち");
+            $('.enemy_result').text("チョキ");
+            $('.win_lose').text("勝ち");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 3) {
-            $('').text("パー");
-            $('.janken_result').text("負け");
+            $('.enemy_result').text("パー");
+            $('.win_lose').text("負け");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         }
     });
@@ -98,16 +101,19 @@ $(function () {
         var com = Math.floor(Math.random() * 3 + 1);
 
         if (com == 1) {
-            $('').text("グー");
-            $('.janken_result').text("負け");
+            $('.enemy_result').text("グー");
+            $('.win_lose').text("負け");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 2) {
-            $('').text("チョキ");
-            $('.janken_result').text("あいこ");
+            $('.enemy_result').text("チョキ");
+            $('.win_lose').text("あいこ");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 3) {
-            $('').text("パー");
-            $('.janken_result').text("勝ち");
+            $('.enemy_result').text("パー");
+            $('.win_lose').text("勝ち");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         }
     });
@@ -116,16 +122,19 @@ $(function () {
         //敵の手を乱数で決める
         var com = Math.floor(Math.random() * 3 + 1);
         if (com == 1) {
-            $('').text("グー");
-            $('.janken_result').text("勝ち");
+            $('.enemy_result').text("グー");
+            $('.win_lose').text("勝ち");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 2) {
-            $('').text("チョキ");
-            $('.janken_result').text("負け");
+            $('.enemy_result').text("チョキ");
+            $('.win_lose').text("負け");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 3) {
-            $('').text("パー");
-            $('.janken_result').text("あいこ");
+            $('.enemy_result').text("パー");
+            $('.win_lose').text("あいこ");
+            $('.janken_result').fadeIn(500);
             j_stage++;
         }
     });
