@@ -48,14 +48,20 @@ $(function () {
 
         //拳醤ボタンを押すと結果表示，閉じるボタンで消去
         $('.explain_bt').on('click', function () {
-            $('.explain').fadeIn(300);
+            $('.doragon').fadeIn(300);
+            $('.doragon').delay(400).fadeOut(300);
+            $('.explain').delay(300).fadeIn(300);
         });
         $('.explain_close').on('click', function () {
             $('.explain').fadeOut(300);
+            $('.doragon').fadeIn(300);
+            $('.doragon').delay(400).fadeOut(300);
         });
 
         //終了を押すとウインドウ消去
         $('.janken_finish').on('click', function () {
+            $('.doragon').fadeIn(300);
+            $('.doragon').delay(400).fadeOut(300);
             $('.janken').fadeOut(300);
             $('.janken_result').fadeOut(300);
         });
