@@ -117,7 +117,8 @@ $(function () {
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
                     $('.enemy_result').text("グー");
-                    $('.win_lose').text("あいこ");
+                    $('.win_lose').html('<img src="img/win.png">');
+                    //                    $('.win_lose').text("あいこ");
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["gu"]["item"]);
