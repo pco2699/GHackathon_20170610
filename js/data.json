@@ -1,7 +1,10 @@
 {
   "menu1": {
     "win": {
-      "gu": "gyu",
+      "gu": {
+        "zairyo": "牛肉",
+        "message": "あなたは牛肉を手に入れた" // data["menu1"]["win"]["gu"]["message"] -> あなたは牛肉を手に入れた
+      },
       "choki": "tai",
       "par": "kani"
     },
