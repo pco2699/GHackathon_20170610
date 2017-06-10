@@ -40,10 +40,10 @@ $(function () {
 
             //ロード画面表示→消去
             $('.doragon').fadeIn(300);
-            $('.doragon').delay(600).fadeOut(300);
+            $('.doragon').delay(300).fadeOut(300);
 
             //じゃんけんウインドウ表示
-            $('.janken').delay(900).fadeIn(300);
+            $('.janken').delay(300).fadeIn(300);
         });
 
         //拳醤ボタンを押すと結果表示，閉じるボタンで消去
