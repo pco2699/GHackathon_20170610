@@ -145,7 +145,7 @@ $(function () {
                     $('.start_bt').text('つづける。');
                 }
                 if (j_stage == 6) {
-                    $('header').delay(1000).slideUp(1000);
+                    $('header').delay(2000).slideUp(1000);
                 }
             });
 
