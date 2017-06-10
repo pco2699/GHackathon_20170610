@@ -5,17 +5,17 @@ $(function () {
         var w = $(window).width();
     });
 
-function playSound(src, loop) {
-    // src = 再生する音楽のパス
-    // loop = loopする or not
+    function playSound(src, loop) {
+        // src = 再生する音楽のパス
+        // loop = loopする or not
 
-    if(loop === "noloop"){
-        $(".audio").removeAttr("loop");
+        if (loop === "noloop") {
+            $(".audio").removeAttr("loop");
+        }
+        $(".audio").removeAttr("src");
+        $(".audio").attr("src", src);
+        $(".audio")[0].play();
     }
-    $(".audio").removeAttr("src");
-    $(".audio").attr("src", src);
-    $(".audio")[0].play();
-}
 
 
     //外部データの読み込み
@@ -133,6 +133,7 @@ function playSound(src, loop) {
                         $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["gu"]["item"]);
+                        $('.result_img').html(menu_data["menu1"]["draw"]["gu"]["image"]);
                     } else if (j_stage == 2) {
                         $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu2"]["draw"]["gu"]["message"]);
