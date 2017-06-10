@@ -119,6 +119,7 @@ $(function () {
                     $('.enemy_result').html('<img src="img/gu.png">');
                     $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
+                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
                         $('.menu1').text(menu_data["menu1"]["draw"]["gu"]["item"]);
                     } else if (j_stage == 2) {
