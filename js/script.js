@@ -7,6 +7,8 @@ $(function () {
 
     var j_stage = 1;
 
+
+
     //スタートボタンでじゃんけん開始
     $('.start_bt').on('click', function () {
         //敵の種類を選ぶ
@@ -22,18 +24,18 @@ $(function () {
             $('.enemy_txt').html('諦めたらそこで試合終了ですよ')
         }
         //じゃんけんウインドウ表示
-        $('.janken').fadeIn(1000);
+        $('.janken').fadeIn(500);
     });
 
     //仮に勝つボタンを押すと結果表示
-    $('.janken_win_kari').on('click', function () {
-        $('.janken_result').fadeIn(1000);
-    })
+    //    $('.janken_win_kari').on('click', function () {
+    //        $('.janken_result').fadeIn(1000);
+    //    })
 
     //終了を押すとウインドウ消去
     $('.janken_finish').on('click', function () {
-        $('.janken').fadeOut(1000);
-        $('.janken_result').fadeOut(1000);
+        $('.janken').fadeOut(500);
+        $('.janken_result').fadeOut(500);
     });
 
 
@@ -80,16 +82,69 @@ $(function () {
         if (com == 1) {
             $('.enemy_result').text("グー");
             $('.win_lose').text("あいこ");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉1を手に入れた");
+                $('.menu1').text("肉1");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草1を手に入れた");
+                $('.menu2').text("草1");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米1を手に入れた");
+                $('.menu3').text("米1");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺1を手に入れた");
+                $('.menu4').text("麺1");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆1を手に入れた");
+                $('.menu5').text("豆1");
+                $('.start_bt').hide();
+            }
             $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 2) {
             $('.enemy_result').text("チョキ");
             $('.win_lose').text("勝ち");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉2を手に入れた");
+                $('.menu1').text("肉2");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草2を手に入れた");
+                $('.menu2').text("草2");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米2を手に入れた");
+                $('.menu3').text("米2");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺2を手に入れた");
+                $('.menu4').text("麺2");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆2を手に入れた");
+                $('.menu5').text("豆2");
+                $('.start_bt').hide();
+            }
+
             $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 3) {
             $('.enemy_result').text("パー");
             $('.win_lose').text("負け");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉3を手に入れた");
+                $('.menu1').text("肉3");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草3を手に入れた");
+                $('.menu2').text("草3");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米3を手に入れた");
+                $('.menu3').text("米3");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺3を手に入れた");
+                $('.menu4').text("麺3");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆3を手に入れた");
+                $('.menu5').text("豆3");
+                $('.start_bt').hide();
+            }
+
             $('.janken_result').fadeIn(500);
             j_stage++;
         }
@@ -103,16 +158,67 @@ $(function () {
         if (com == 1) {
             $('.enemy_result').text("グー");
             $('.win_lose').text("負け");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉1を手に入れた");
+                $('.menu1').text("肉1");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草1を手に入れた");
+                $('.menu2').text("草1");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米1を手に入れた");
+                $('.menu3').text("米1");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺1を手に入れた");
+                $('.menu4').text("麺1");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆1を手に入れた");
+                $('.menu5').text("豆1");
+                $('.start_bt').hide();
+            }
             $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 2) {
             $('.enemy_result').text("チョキ");
             $('.win_lose').text("あいこ");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉1を手に入れた");
+                $('.menu1').text("肉1");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草1を手に入れた");
+                $('.menu2').text("草1");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米1を手に入れた");
+                $('.menu3').text("米1");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺1を手に入れた");
+                $('.menu4').text("麺1");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆1を手に入れた");
+                $('.menu5').text("豆1");
+                $('.start_bt').hide();
+            }
             $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 3) {
             $('.enemy_result').text("パー");
             $('.win_lose').text("勝ち");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉1を手に入れた");
+                $('.menu1').text("肉1");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草1を手に入れた");
+                $('.menu2').text("草1");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米1を手に入れた");
+                $('.menu3').text("米1");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺1を手に入れた");
+                $('.menu4').text("麺1");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆1を手に入れた");
+                $('.menu5').text("豆1");
+                $('.start_bt').hide();
+            }
             $('.janken_result').fadeIn(500);
             j_stage++;
         }
@@ -124,16 +230,67 @@ $(function () {
         if (com == 1) {
             $('.enemy_result').text("グー");
             $('.win_lose').text("勝ち");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉1を手に入れた");
+                $('.menu1').text("肉1");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草1を手に入れた");
+                $('.menu2').text("草1");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米1を手に入れた");
+                $('.menu3').text("米1");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺1を手に入れた");
+                $('.menu4').text("麺1");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆1を手に入れた");
+                $('.menu5').text("豆1");
+                $('.start_bt').hide();
+            }
             $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 2) {
             $('.enemy_result').text("チョキ");
             $('.win_lose').text("負け");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉1を手に入れた");
+                $('.menu1').text("肉1");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草1を手に入れた");
+                $('.menu2').text("草1");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米1を手に入れた");
+                $('.menu3').text("米1");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺1を手に入れた");
+                $('.menu4').text("麺1");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆1を手に入れた");
+                $('.menu5').text("豆1");
+                $('.start_bt').hide();
+            }
             $('.janken_result').fadeIn(500);
             j_stage++;
         } else if (com == 3) {
             $('.enemy_result').text("パー");
             $('.win_lose').text("あいこ");
+            if (j_stage == 1) {
+                $('.result_txt').text("肉1を手に入れた");
+                $('.menu1').text("肉1");
+            } else if (j_stage == 2) {
+                $('.result_txt').text("草1を手に入れた");
+                $('.menu2').text("草1");
+            } else if (j_stage == 3) {
+                $('.result_txt').text("米1を手に入れた");
+                $('.menu3').text("米1");
+            } else if (j_stage == 4) {
+                $('.result_txt').text("麺1を手に入れた");
+                $('.menu4').text("麺1");
+            } else if (j_stage == 5) {
+                $('.result_txt').text("豆1を手に入れた");
+                $('.menu5').text("豆1");
+                $('.start_bt').hide();
+            }
             $('.janken_result').fadeIn(500);
             j_stage++;
         }
