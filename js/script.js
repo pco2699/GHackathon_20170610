@@ -26,7 +26,9 @@ $(function () {
     // じゃんけん結果画面か
     let is_jk_rslt = false;
 
-    Leap.loop({enableGestures: true},   function (frame) {
+    Leap.loop({
+        enableGestures: true
+    }, function (frame) {
         if (frame.hands.length > 0 && leap_can_track_janken) {
             for (hand of frame.hands) {
                 let extendedFingers = 0;
@@ -42,10 +44,10 @@ $(function () {
                 }
             }
         }
-        if(frame.gestures.length > 0 && leap_can_track_gesture){
+        if (frame.gestures.length > 0 && leap_can_track_gesture) {
             console.log("Hey");
-            frame.gestures.forEach(function(gesture){
-                switch (gesture.type){
+            frame.gestures.forEach(function (gesture) {
+                switch (gesture.type) {
                     case "circle":
                         break;
                     case "keyTap":
@@ -54,7 +56,7 @@ $(function () {
                         $('.start_bt').click();
                         break;
                     case "swipe":
-                        if(is_jk_rslt) {
+                        if (is_jk_rslt) {
                             $('.janken_finish').click();
                         }
                         break;
@@ -141,6 +143,9 @@ $(function () {
                 if (j_stage == 2) {
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
+                }
+                if (j_stage == 5) {
+                    $('header').delay(1000).slideUp(1000);
                 }
             });
 
