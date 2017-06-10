@@ -116,7 +116,7 @@ $(function () {
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
-                    $('.enemy_result').text("グー");
+                    $('.enemy_result').html('<img src="img/gu.png">');
                     $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
@@ -138,7 +138,7 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 2) {
-                    $('.enemy_result').text("チョキ");
+                    $('.enemy_result').html('<img src="img/cho.png">');
                     $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["win"]["gu"]["message"]);
@@ -160,7 +160,7 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 3) {
-                    $('.enemy_result').text("パー");
+                    $('.enemy_result').html('<img src="img/pa.png">');
                     $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["lose"]["gu"]["message"]);
@@ -189,7 +189,7 @@ $(function () {
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
-                    $('.enemy_result').text("グー");
+                    $('.enemy_result').html('<img src="img/gu.png">');
                     $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["lose"]["choki"]["message"]);
@@ -211,7 +211,7 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 2) {
-                    $('.enemy_result').text("チョキ");
+                    $('.enemy_result').html('<img src="img/cho.png">');
                     $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["draw"]["choki"]["message"]);
@@ -233,7 +233,7 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 3) {
-                    $('.enemy_result').text("パー");
+                    $('.enemy_result').html('<img src="img/pa.png">');
                     $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["win"]["choki"]["message"]);
@@ -262,7 +262,7 @@ $(function () {
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
-                    $('.enemy_result').text("グー");
+                    $('.enemy_result').html('<img src="img/gu.png">');
                     $('.win_lose').html('<img src="img/win.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["win"]["par"]["message"]);
@@ -284,7 +284,7 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 2) {
-                    $('.enemy_result').text("チョキ");
+                    $('.enemy_result').html('<img src="img/cho.png">');
                     $('.win_lose').html('<img src="img/lose.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["lose"]["par"]["message"]);
@@ -306,7 +306,7 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     j_stage++;
                 } else if (com == 3) {
-                    $('.enemy_result').text("パー");
+                    $('.enemy_result').html('<img src="img/pa.png">');
                     $('.win_lose').html('<img src="img/draw.png">');
                     if (j_stage == 1) {
                         $('.result_txt').text(menu_data["menu1"]["draw"]["par"]["message"]);
