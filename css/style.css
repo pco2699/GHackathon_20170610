@@ -261,10 +261,9 @@ button {
   left: 0;
 }
 
-.enemy_result {
+.win_lose {
   position: absolute;
   top: 40px;
   left: 0;
   z-index: 2;
-  
 }
