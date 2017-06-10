@@ -7,6 +7,7 @@
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 /* マージン */
@@ -278,7 +279,7 @@ button {
   position: absolute;
   top: 5px;
   right: 0;
-  width: 70px;
+  max-width: 80px;
   overflow: hidden;
 }
 
