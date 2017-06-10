@@ -262,19 +262,19 @@ $(function () {
                 $('.win_lose').text("負け");
                 if (j_stage == 1) {
                     $('.result_txt').text(menu_data["menu1"]["lose"]["par"]["message"]);
-                    $('.menu1').text(menu_data["menu1"]["lose"]["par"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["lose"]["par"]["item"]);
                 } else if (j_stage == 2) {
                     $('.result_txt').text(menu_data["menu2"]["lose"]["par"]["message"]);
-                    $('.menu2').text(menu_data["menu2"]["lose"]["par"]["message"]);
+                    $('.menu2').text(menu_data["menu2"]["lose"]["par"]["item"]);
                 } else if (j_stage == 3) {
                     $('.result_txt').text(menu_data["menu3"]["lose"]["par"]["message"]);
-                    $('.menu3').text(menu_data["menu3"]["lose"]["par"]["message"]);
+                    $('.menu3').text(menu_data["menu3"]["lose"]["par"]["item"]);
                 } else if (j_stage == 4) {
                     $('.result_txt').text(menu_data["menu4"]["lose"]["par"]["message"]);
-                    $('.menu4').text(menu_data["menu4"]["lose"]["par"]["message"]);
+                    $('.menu4').text(menu_data["menu4"]["lose"]["par"]["item"]);
                 } else if (j_stage == 5) {
                     $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["lose"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
