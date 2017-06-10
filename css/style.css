@@ -287,3 +287,9 @@ button {
   height: 56px;
   object-fit: cover;
 }
+
+.doragon img {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+}
