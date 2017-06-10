@@ -17,9 +17,17 @@ $(function () {
         $(".audio")[0].play();
     }
 
-    let leap_can_track = false;
-    Leap.loop(function (frame) {
-        if (frame.hands.length > 0 && leap_can_track) {
+    // じゃんけん検知可能か
+    let leap_can_track_janken = false;
+
+    // ジェスチャ検知可能か
+    let leap_can_track_gesture = true;
+
+    // じゃんけん結果画面か
+    let is_jk_rslt = false;
+
+    Leap.loop({enableGestures: true},   function (frame) {
+        if (frame.hands.length > 0 && leap_can_track_janken) {
             for (hand of frame.hands) {
                 let extendedFingers = 0;
                 for (finger of hand.fingers) {
@@ -34,6 +42,25 @@ $(function () {
                 }
             }
         }
+        if(frame.gestures.length > 0 && leap_can_track_gesture){
+            console.log("Hey");
+            frame.gestures.forEach(function(gesture){
+                switch (gesture.type){
+                    case "circle":
+                        break;
+                    case "keyTap":
+                        break;
+                    case "screenTap":
+                        $('.start_bt').click();
+                        break;
+                    case "swipe":
+                        if(is_jk_rslt) {
+                            $('.janken_finish').click();
+                        }
+                        break;
+                }
+            });
+        }
     });
 
 
@@ -47,10 +74,13 @@ $(function () {
         $.get("js/message.json", function (data) {
 
             var message_data = data;
-            //スタートボタンでじゃんけん開始
+            //スタートボタンでじゃんけん開始gi
             $('.start_bt').on('click', function () {
-                // Leap 検知開始
-                leap_can_track = true;
+                // Leap じゃんけん検知開始
+                leap_can_track_janken = true;
+                // Leap ジェスチャ検知OFF
+                leap_can_track_gesture = false;
+
                 //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
@@ -107,12 +137,16 @@ $(function () {
                 $('.doragon').delay(400).fadeOut(300);
                 $('.janken').fadeOut(300);
                 $('.janken_result').fadeOut(300);
+                is_jk_rslt = false;
             });
 
             //じゃんけん勝敗判定関数
             $('.gu_btn').on("click", function () {
-                // Leap 検知終了
-                leap_can_track = false;
+                // Leap じゃんけん検知OFF
+                leap_can_track_janken = false;
+                // Leap ジェスチャ検知ON
+                leap_can_track_gesture = true;
+
 
                 var humanGu = 1;
                 //敵の手を乱数で決める
@@ -153,6 +187,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
@@ -192,6 +228,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
@@ -231,6 +269,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
@@ -238,8 +278,10 @@ $(function () {
             });
 
             $('.cho_btn').on("click", function () {
-                // Leap 検知終了
-                leap_can_track = false;
+                // Leap じゃんけん検知OFF
+                leap_can_track_janken = false;
+                // Leap ジェスチャ検知ON
+                leap_can_track_gesture = true;
 
 
                 var humaCho = 2;
@@ -281,6 +323,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
@@ -320,6 +364,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
@@ -359,6 +405,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
@@ -366,8 +414,10 @@ $(function () {
             });
 
             $('.pa_btn').on("click", function () {
-                // Leap 検知終了
-                leap_can_track = false;
+                // Leap じゃんけん検知OFF
+                leap_can_track_janken = false;
+                // Leap ジェスチャ検知ON
+                leap_can_track_gesture = true;
 
                 var humaPar = 3;
                 //敵の手を乱数で決める
@@ -408,6 +458,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
@@ -447,6 +499,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
@@ -486,6 +540,8 @@ $(function () {
                         $('.start_bt').hide();
                     }
                     $('.janken_result').fadeIn(300);
+                    is_jk_rslt = true;
+
                     j_stage++;
                     $('.explain_bt').hide();
                     $('.start_bt').text('つづける。');
