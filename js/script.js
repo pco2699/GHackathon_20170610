@@ -93,19 +93,19 @@ $(function () {
                 $('.win_lose').text("あいこ");
                 if (j_stage == 1) {
                     $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
-                    $('.menu1').text("鶏");
+                    $('.menu1').text(menu_data["menu1"]["draw"]["gu"]["item"]);
                 } else if (j_stage == 2) {
                     $('.result_txt').text(menu_data["menu2"]["draw"]["gu"]["message"]);
-                    $('.menu2').text("白菜X人参");
+                    $('.menu2').text(menu_data["menu2"]["draw"]["gu"]["item"]);
                 } else if (j_stage == 3) {
                     $('.result_txt').text(menu_data["menu3"]["draw"]["gu"]["message"]);
-                    $('.menu3').text("米1");
+                    $('.menu3').text(menu_data["menu3"]["draw"]["gu"]["item"]);
                 } else if (j_stage == 4) {
                     $('.result_txt').text(menu_data["menu4"]["draw"]["gu"]["message"]);
-                    $('.menu4').text("麺1");
+                    $('.menu4').text(menu_data["menu4"]["draw"]["gu"]["item"]);
                 } else if (j_stage == 5) {
                     $('.result_txt').text(menu_data["menu5"]["draw"]["gu"]["message"]);
-                    $('.menu5').text("豆1");
+                    $('.menu5').text(menu_data["menu5"]["draw"]["gu"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -114,20 +114,20 @@ $(function () {
                 $('.enemy_result').text("チョキ");
                 $('.win_lose').text("勝ち");
                 if (j_stage == 1) {
-                    $('.result_txt').text("牛を手に入れた");
-                    $('.menu1').text("牛");
+                    $('.result_txt').text(menu_data["menu1"]["win"]["gu"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["win"]["gu"]["item"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("モッツァレラチーズXルッコラを手に入れた");
-                    $('.menu2').text("モッツァレラチーズXルッコラ");
+                    $('.result_txt').text(menu_data["menu2"]["win"]["gu"]["message"]);
+                    $('.menu2').text(menu_data["menu1"]["win"]["gu"]["item"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米2を手に入れた");
-                    $('.menu3').text("米2");
+                    $('.result_txt').text(menu_data["menu3"]["win"]["gu"]["message"]);
+                    $('.menu3').text(menu_data["menu1"]["win"]["gu"]["item"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺2を手に入れた");
-                    $('.menu4').text("麺2");
+                    $('.result_txt').text(menu_data["menu4"]["win"]["gu"]["message"]);
+                    $('.menu4').text(menu_data["menu1"]["win"]["gu"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆2を手に入れた");
-                    $('.menu5').text("豆2");
+                    $('.result_txt').text(menu_data["menu5"]["win"]["gu"]["message"]);
+                    $('.menu5').text(menu_data["menu1"]["win"]["gu"]["message"]);
                     $('.start_bt').hide();
                 }
 
@@ -137,20 +137,20 @@ $(function () {
                 $('.enemy_result').text("パー");
                 $('.win_lose').text("負け");
                 if (j_stage == 1) {
-                    $('.result_txt').text("豆腐を手に入れた");
-                    $('.menu1').text("豆腐");
+                    $('.result_txt').text(menu_data["menu1"]["lose"]["gu"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["lose"]["gu"]["item"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("エノキダケX白滝を手に入れた");
-                    $('.menu2').text("エノキダケX白滝");
+                    $('.result_txt').text(menu_data["menu2"]["win"]["gu"]["message"]);
+                    $('.menu2').text(menu_data["menu2"]["lose"]["gu"]["item"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米3を手に入れた");
-                    $('.menu3').text("米3");
+                    $('.result_txt').text(menu_data["menu3"]["win"]["gu"]["message"]);
+                    $('.menu3').text(menu_data["menu3"]["lose"]["gu"]["item"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺3を手に入れた");
-                    $('.menu4').text("麺3");
+                    $('.result_txt').text(menu_data["menu4"]["win"]["gu"]["message"]);
+                    $('.menu4').text(menu_data["menu4"]["lose"]["gu"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆3を手に入れた");
-                    $('.menu5').text("豆3");
+                    $('.result_txt').text(menu_data["menu5"]["win"]["gu"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["lose"]["gu"]["item"]);
                     $('.start_bt').hide();
                 }
 
@@ -168,20 +168,20 @@ $(function () {
                 $('.enemy_result').text("グー");
                 $('.win_lose').text("負け");
                 if (j_stage == 1) {
-                    $('.result_txt').text("シラスを手に入れた");
-                    $('.menu1').text("シラス");
+                    $('.result_txt').text(menu_data["menu1"]["lose"]["choki"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["lose"]["choki"]["item"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("カイワレXコンニャクを手に入れた");
-                    $('.menu2').text("カイワレXコンニャク");
+                    $('.result_txt').text(menu_data["menu2"]["lose"]["choki"]["message"]);
+                    $('.menu2').text(menu_data["menu2"]["lose"]["choki"]["item"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米1を手に入れた");
-                    $('.menu3').text("米1");
+                    $('.result_txt').text(menu_data["menu3"]["lose"]["choki"]["message"]);
+                    $('.menu3').text(menu_data["menu3"]["lose"]["choki"]["item"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺1を手に入れた");
-                    $('.menu4').text("麺1");
+                    $('.result_txt').text(menu_data["menu4"]["lose"]["choki"]["message"]);
+                    $('.menu4').text(menu_data["menu4"]["lose"]["choki"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆1を手に入れた");
-                    $('.menu5').text("豆1");
+                    $('.result_txt').text(menu_data["menu5"]["lose"]["choki"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["lose"]["choki"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -190,20 +190,20 @@ $(function () {
                 $('.enemy_result').text("チョキ");
                 $('.win_lose').text("あいこ");
                 if (j_stage == 1) {
-                    $('.result_txt').text("鮭を手に入れた");
-                    $('.menu1').text("鮭");
+                    $('.result_txt').text(menu_data["menu1"]["draw"]["choki"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["draw"]["choki"]["item"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("ホウレン草X大根を手に入れた");
-                    $('.menu2').text("ホウレン草X大根");
+                    $('.result_txt').text(menu_data["menu2"]["draw"]["choki"]["message"]);
+                    $('.menu2').text(menu_data["menu2"]["draw"]["choki"]["item"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米1を手に入れた");
-                    $('.menu3').text("米1");
+                    $('.result_txt').text(menu_data["menu3"]["draw"]["choki"]["message"]);
+                    $('.menu3').text(menu_data["menu3"]["draw"]["choki"]["item"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺1を手に入れた");
-                    $('.menu4').text("麺1");
+                    $('.result_txt').text(menu_data["menu4"]["draw"]["choki"]["message"]);
+                    $('.menu4').text(menu_data["menu4"]["draw"]["choki"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆1を手に入れた");
-                    $('.menu5').text("豆1");
+                    $('.result_txt').text(menu_data["menu5"]["draw"]["choki"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["draw"]["choki"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -212,20 +212,20 @@ $(function () {
                 $('.enemy_result').text("パー");
                 $('.win_lose').text("勝ち");
                 if (j_stage == 1) {
-                    $('.result_txt').text("タイを手に入れた");
-                    $('.menu1').text("タイ");
+                    $('.result_txt').text(menu_data["menu1"]["win"]["choki"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["win"]["choki"]["item"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("ズッキーニXパプリカを手に入れた");
-                    $('.menu2').text("ズッキーニXパプリカ");
+                    $('.result_txt').text(menu_data["menu2"]["win"]["choki"]["message"]);
+                    $('.menu2').text(menu_data["menu2"]["win"]["choki"]["item"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米1を手に入れた");
-                    $('.menu3').text("米1");
+                    $('.result_txt').text(menu_data["menu3"]["win"]["choki"]["message"]);
+                    $('.menu3').text(menu_data["menu3"]["win"]["choki"]["item"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺1を手に入れた");
-                    $('.menu4').text("麺1");
+                    $('.result_txt').text(menu_data["menu4"]["win"]["choki"]["message"]);
+                    $('.menu4').text(menu_data["menu4"]["win"]["choki"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆1を手に入れた");
-                    $('.menu5').text("豆1");
+                    $('.result_txt').text(menu_data["menu5"]["win"]["choki"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["win"]["choki"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -240,20 +240,20 @@ $(function () {
                 $('.enemy_result').text("グー");
                 $('.win_lose').text("勝ち");
                 if (j_stage == 1) {
-                    $('.result_txt').text("カニを手に入れた");
-                    $('.menu1').text("カニ");
+                    $('.result_txt').text(menu_data["menu1"]["win"]["par"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["win"]["par"]["item"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("ゴーヤXトマトを手に入れた");
-                    $('.menu2').text("ゴーヤXトマト");
+                    $('.result_txt').text(menu_data["menu2"]["win"]["par"]["message"]);
+                    $('.menu2').text(menu_data["menu2"]["win"]["par"]["item"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米1を手に入れた");
-                    $('.menu3').text("米1");
+                    $('.result_txt').text(menu_data["menu3"]["win"]["par"]["message"]);
+                    $('.menu3').text(menu_data["menu3"]["win"]["par"]["item"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺1を手に入れた");
-                    $('.menu4').text("麺1");
+                    $('.result_txt').text(menu_data["menu4"]["win"]["par"]["message"]);
+                    $('.menu4').text(menu_data["menu4"]["win"]["par"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆1を手に入れた");
-                    $('.menu5').text("豆1");
+                    $('.result_txt').text(menu_data["menu5"]["win"]["par"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["win"]["par"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -262,20 +262,20 @@ $(function () {
                 $('.enemy_result').text("チョキ");
                 $('.win_lose').text("負け");
                 if (j_stage == 1) {
-                    $('.result_txt').text("シジミを手に入れた");
-                    $('.menu1').text("シジミ");
+                    $('.result_txt').text(menu_data["menu1"]["lose"]["par"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["lose"]["par"]["message"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("もやしXふを手に入れた");
-                    $('.menu2').text("もやしXふ");
+                    $('.result_txt').text(menu_data["menu2"]["win"]["par"]["message"]);
+                    $('.menu2').text(menu_data["menu2"]["lose"]["par"]["message"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米1を手に入れた");
-                    $('.menu3').text("米1");
+                    $('.result_txt').text(menu_data["menu3"]["win"]["par"]["message"]);
+                    $('.menu3').text(menu_data["menu3"]["lose"]["par"]["message"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺1を手に入れた");
-                    $('.menu4').text("麺1");
+                    $('.result_txt').text(menu_data["menu4"]["win"]["par"]["message"]);
+                    $('.menu4').text(menu_data["menu4"]["lose"]["par"]["message"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆1を手に入れた");
-                    $('.menu5').text("豆1");
+                    $('.result_txt').text(menu_data["menu5"]["win"]["par"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["lose"]["par"]["message"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -284,20 +284,20 @@ $(function () {
                 $('.enemy_result').text("パー");
                 $('.win_lose').text("あいこ");
                 if (j_stage == 1) {
-                    $('.result_txt').text("エビを手に入れた");
-                    $('.menu1').text("エビ");
+                    $('.result_txt').text(menu_data["menu1"]["draw"]["par"]["message"]);
+                    $('.menu1').text(menu_data["menu1"]["draw"]["par"]["item"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("ジャガイモX玉ねぎを手に入れた");
-                    $('.menu2').text("ジャガイモX玉ねぎ");
+                    $('.result_txt').text(menu_data["menu2"]["draw"]["par"]["message"]);
+                    $('.menu2').text(menu_data["menu2"]["draw"]["par"]["item"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米1を手に入れた");
-                    $('.menu3').text("米1");
+                    $('.result_txt').text(menu_data["menu3"]["draw"]["par"]["message"]);
+                    $('.menu3').text(menu_data["menu3"]["draw"]["par"]["item"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺1を手に入れた");
-                    $('.menu4').text("麺1");
+                    $('.result_txt').text(menu_data["menu4"]["draw"]["par"]["message"]);
+                    $('.menu4').text(menu_data["menu4"]["draw"]["par"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆1を手に入れた");
-                    $('.menu5').text("豆1");
+                    $('.result_txt').text(menu_data["menu5"]["draw"]["par"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["draw"]["par"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
