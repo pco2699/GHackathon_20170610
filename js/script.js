@@ -156,6 +156,10 @@ $(function () {
                 }
             });
 
+            $('.start_cooking').on('click', function(){
+                    $('.blues').fadeIn(500);
+            });
+
             //じゃんけん勝敗判定関数
             $('.gu_btn').on("click", function () {
                 // Leap じゃんけん検知OFF
