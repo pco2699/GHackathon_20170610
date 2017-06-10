@@ -21,7 +21,7 @@ $(function () {
 
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
-                alert(message_data["ms1"]);
+                alert(message_data[0]);
 
                 //敵の種類を選ぶ
                 var enemy = Math.floor(Math.random() * 3 + 1);
