@@ -117,16 +117,16 @@ $(function () {
                     $('.menu1').text(menu_data["menu1"]["win"]["gu"]["item"]);
                 } else if (j_stage == 2) {
                     $('.result_txt').text(menu_data["menu2"]["win"]["gu"]["message"]);
-                    $('.menu2').text(menu_data["menu1"]["win"]["gu"]["item"]);
+                    $('.menu2').text(menu_data["menu2"]["win"]["gu"]["item"]);
                 } else if (j_stage == 3) {
                     $('.result_txt').text(menu_data["menu3"]["win"]["gu"]["message"]);
-                    $('.menu3').text(menu_data["menu1"]["win"]["gu"]["item"]);
+                    $('.menu3').text(menu_data["menu3"]["win"]["gu"]["item"]);
                 } else if (j_stage == 4) {
                     $('.result_txt').text(menu_data["menu4"]["win"]["gu"]["message"]);
-                    $('.menu4').text(menu_data["menu1"]["win"]["gu"]["item"]);
+                    $('.menu4').text(menu_data["menu4"]["win"]["gu"]["item"]);
                 } else if (j_stage == 5) {
                     $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
-                    $('.menu5').text(menu_data["menu1"]["win"]["item"]);
+                    $('.menu5').text(menu_data["menu5"]["win"]["item"]);
                     $('.start_bt').hide();
                 }
 
