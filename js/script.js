@@ -82,7 +82,6 @@ $(function () {
 
         //じゃんけん勝敗判定関数
         $('.gu_btn').on("click", function () {
-            //            alert(menu_data["menu1"]["win"]["gu"]["message"]);
 
             var humanGu = 1;
             //敵の手を乱数で決める
@@ -104,8 +103,8 @@ $(function () {
                     $('.result_txt').text(menu_data["menu4"]["draw"]["gu"]["message"]);
                     $('.menu4').text(menu_data["menu4"]["draw"]["gu"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["draw"]["gu"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["draw"]["gu"]["item"]);
+                    $('.result_txt').text(menu_data["menu5"]["draw"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -126,8 +125,8 @@ $(function () {
                     $('.result_txt').text(menu_data["menu4"]["win"]["gu"]["message"]);
                     $('.menu4').text(menu_data["menu1"]["win"]["gu"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["win"]["gu"]["message"]);
-                    $('.menu5').text(menu_data["menu1"]["win"]["gu"]["message"]);
+                    $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
+                    $('.menu5').text(menu_data["menu1"]["win"]["item"]);
                     $('.start_bt').hide();
                 }
 
@@ -140,17 +139,17 @@ $(function () {
                     $('.result_txt').text(menu_data["menu1"]["lose"]["gu"]["message"]);
                     $('.menu1').text(menu_data["menu1"]["lose"]["gu"]["item"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text(menu_data["menu2"]["win"]["gu"]["message"]);
+                    $('.result_txt').text(menu_data["menu2"]["lose"]["gu"]["message"]);
                     $('.menu2').text(menu_data["menu2"]["lose"]["gu"]["item"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text(menu_data["menu3"]["win"]["gu"]["message"]);
+                    $('.result_txt').text(menu_data["menu3"]["lose"]["gu"]["message"]);
                     $('.menu3').text(menu_data["menu3"]["lose"]["gu"]["item"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text(menu_data["menu4"]["win"]["gu"]["message"]);
+                    $('.result_txt').text(menu_data["menu4"]["lose"]["gu"]["message"]);
                     $('.menu4').text(menu_data["menu4"]["lose"]["gu"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["win"]["gu"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["lose"]["gu"]["item"]);
+                    $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
                     $('.start_bt').hide();
                 }
 
@@ -180,8 +179,8 @@ $(function () {
                     $('.result_txt').text(menu_data["menu4"]["lose"]["choki"]["message"]);
                     $('.menu4').text(menu_data["menu4"]["lose"]["choki"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["lose"]["choki"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["lose"]["choki"]["item"]);
+                    $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -202,8 +201,8 @@ $(function () {
                     $('.result_txt').text(menu_data["menu4"]["draw"]["choki"]["message"]);
                     $('.menu4').text(menu_data["menu4"]["draw"]["choki"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["draw"]["choki"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["draw"]["choki"]["item"]);
+                    $('.result_txt').text(menu_data["menu5"]["draw"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -224,8 +223,8 @@ $(function () {
                     $('.result_txt').text(menu_data["menu4"]["win"]["choki"]["message"]);
                     $('.menu4').text(menu_data["menu4"]["win"]["choki"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["win"]["choki"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["win"]["choki"]["item"]);
+                    $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["win"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -252,8 +251,8 @@ $(function () {
                     $('.result_txt').text(menu_data["menu4"]["win"]["par"]["message"]);
                     $('.menu4').text(menu_data["menu4"]["win"]["par"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["win"]["par"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["win"]["par"]["item"]);
+                    $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["win"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -265,17 +264,17 @@ $(function () {
                     $('.result_txt').text(menu_data["menu1"]["lose"]["par"]["message"]);
                     $('.menu1').text(menu_data["menu1"]["lose"]["par"]["message"]);
                 } else if (j_stage == 2) {
-                    $('.result_txt').text(menu_data["menu2"]["win"]["par"]["message"]);
+                    $('.result_txt').text(menu_data["menu2"]["lose"]["par"]["message"]);
                     $('.menu2').text(menu_data["menu2"]["lose"]["par"]["message"]);
                 } else if (j_stage == 3) {
-                    $('.result_txt').text(menu_data["menu3"]["win"]["par"]["message"]);
+                    $('.result_txt').text(menu_data["menu3"]["lose"]["par"]["message"]);
                     $('.menu3').text(menu_data["menu3"]["lose"]["par"]["message"]);
                 } else if (j_stage == 4) {
-                    $('.result_txt').text(menu_data["menu4"]["win"]["par"]["message"]);
+                    $('.result_txt').text(menu_data["menu4"]["lose"]["par"]["message"]);
                     $('.menu4').text(menu_data["menu4"]["lose"]["par"]["message"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["win"]["par"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["lose"]["par"]["message"]);
+                    $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["lose"]["message"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
@@ -296,8 +295,8 @@ $(function () {
                     $('.result_txt').text(menu_data["menu4"]["draw"]["par"]["message"]);
                     $('.menu4').text(menu_data["menu4"]["draw"]["par"]["item"]);
                 } else if (j_stage == 5) {
-                    $('.result_txt').text(menu_data["menu5"]["draw"]["par"]["message"]);
-                    $('.menu5').text(menu_data["menu5"]["draw"]["par"]["item"]);
+                    $('.result_txt').text(menu_data["menu5"]["draw"]["message"]);
+                    $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
                     $('.start_bt').hide();
                 }
                 $('.janken_result').fadeIn(500);
