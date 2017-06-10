@@ -92,25 +92,21 @@ $(function () {
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 2) {
-                    playSound("sound/battle2.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy2.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 3) {
-                    playSound("sound/battle3.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy3.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 4) {
-                    playSound("sound/battle4.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy4.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 5) {
-                    playSound("sound/battle5.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy5.jpg")'
                     });
