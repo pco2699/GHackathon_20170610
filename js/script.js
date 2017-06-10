@@ -17,6 +17,25 @@ $(function () {
         $(".audio")[0].play();
     }
 
+    let leap_can_track = false;
+    Leap.loop(function (frame) {
+        if (frame.hands.length > 0 && leap_can_track) {
+            for (hand of frame.hands) {
+                let extendedFingers = 0;
+                for (finger of hand.fingers) {
+                    if (finger.extended) extendedFingers++;
+                }
+                if (extendedFingers === 0) {
+                    $(".gu_btn").click();
+                } else if (extendedFingers === 5) {
+                    $(".pa_btn").click();
+                } else if (extendedFingers === 2) {
+                    $(".cho_btn").click();
+                }
+            }
+        }
+    });
+
 
     //外部データの読み込み
     $.get("js/data.json", function (data) {
@@ -30,6 +49,8 @@ $(function () {
             var message_data = data;
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
+                // Leap 検知開始
+                leap_can_track = true;
                 //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
@@ -89,42 +110,11 @@ $(function () {
                 $('.janken_result').fadeOut(300);
             });
 
-
-
-
-
-
-
-            Leap.loop(function (frame) {
-                let track_flag = false;
-                if (frame.hands.length > 0 && !track_flag) {
-                    for (hand of frame.hands) {
-                        let extendedFingers = 0;
-                        for (finger of hand.fingers) {
-                            if (finger.extended) extendedFingers++;
-                        }
-                        if (extendedFingers === 0) {
-                            track_flag = true;
-                            $("#gu_btn").click();
-                        } else if (extendedFingers === 5) {
-                            track_flag = true;
-                            $("#pa_btn").click();
-                        } else if (extendedFingers === 2) {
-                            track_flag = true;
-                            $("#cho_btn").click();
-                        }
-                    }
-                }
-            });
-
-
-
-
-
-
-
             //じゃんけん勝敗判定関数
             $('.gu_btn').on("click", function () {
+                // Leap 検知終了
+                leap_can_track = false;
+
                 var humanGu = 1;
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
@@ -228,6 +218,10 @@ $(function () {
             });
 
             $('.cho_btn').on("click", function () {
+                // Leap 検知終了
+                leap_can_track = false;
+
+
                 var humaCho = 2;
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
@@ -331,6 +325,9 @@ $(function () {
             });
 
             $('.pa_btn').on("click", function () {
+                // Leap 検知終了
+                leap_can_track = false;
+
                 var humaPar = 3;
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
