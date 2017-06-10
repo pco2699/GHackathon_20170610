@@ -17,6 +17,12 @@ $(function () {
         $(".audio")[0].play();
     }
 
+    function playSE(src) {
+        $(".se").removeAttr("src");
+        $(".se").attr("src", src);
+        $(".se")[0].play();
+    }
+
     // じゃんけん検知可能か
     let leap_can_track_janken = false;
 
