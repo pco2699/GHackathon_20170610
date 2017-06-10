@@ -21,16 +21,23 @@ $(function () {
 
             //敵の種類を選ぶ
             var enemy = Math.floor(Math.random() * 3 + 1);
-            if (enemy == 1) {
+            if (j_stage == 1) {
                 $('.enemy').html('敵1')
                 $('.enemy_txt').html('神は死んだ')
-            } else if (enemy == 2) {
+            } else if (j_stage == 2) {
                 $('.enemy').html('敵2')
                 $('.enemy_txt').html('考えるのではなく感じるのだ')
-            } else if (enemy == 3) {
+            } else if (j_stage == 3) {
                 $('.enemy').html('敵3')
                 $('.enemy_txt').html('諦めたらそこで試合終了ですよ')
+            } else if (j_stage == 4) {
+                $('.enemy').html('敵4')
+                $('.enemy_txt').html('クリリンのことかー')
+            } else if (j_stage == 5) {
+                $('.enemy').html('敵5')
+                $('.enemy_txt').html('我が生涯に一片の悔い無し')
             }
+
             //じゃんけんウインドウ表示
             $('.janken').fadeIn(500);
         });
@@ -63,7 +70,6 @@ $(function () {
                     for (finger of hand.fingers) {
                         if (finger.extended) extendedFingers++;
                     }
-
                     if (extendedFingers === 0) {
                         track_flag = true;
                         $("#gu_btn").click();
