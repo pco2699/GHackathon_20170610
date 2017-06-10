@@ -6,13 +6,12 @@ $(function () {
     });
 
 
-
+    //メニューの1-5番目カウント用
     var j_stage = 1;
     var menu_data;
 
 
     $.get("js/data.json", function (data) {
-        //メニューの1-5番目カウント用
         // menu_data = $.parseJSON(data);
         menu_data = data;
 
@@ -93,19 +92,19 @@ $(function () {
                 $('.enemy_result').text("グー");
                 $('.win_lose').text("あいこ");
                 if (j_stage == 1) {
-                    $('.result_txt').text("鶏を手に入れた");
+                    $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
                     $('.menu1').text("鶏");
                 } else if (j_stage == 2) {
-                    $('.result_txt').text("白菜X人参を手に入れた");
+                    $('.result_txt').text(menu_data["menu2"]["draw"]["gu"]["message"]);
                     $('.menu2').text("白菜X人参");
                 } else if (j_stage == 3) {
-                    $('.result_txt').text("米1を手に入れた");
+                    $('.result_txt').text(menu_data["menu3"]["draw"]["gu"]["message"]);
                     $('.menu3').text("米1");
                 } else if (j_stage == 4) {
-                    $('.result_txt').text("麺1を手に入れた");
+                    $('.result_txt').text(menu_data["menu4"]["draw"]["gu"]["message"]);
                     $('.menu4').text("麺1");
                 } else if (j_stage == 5) {
-                    $('.result_txt').text("豆1を手に入れた");
+                    $('.result_txt').text(menu_data["menu5"]["draw"]["gu"]["message"]);
                     $('.menu5').text("豆1");
                     $('.start_bt').hide();
                 }
