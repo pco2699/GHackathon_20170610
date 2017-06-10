@@ -29,11 +29,11 @@
     <main class="bg_off_white padding_top_30 padding_side_10 padding_bottom_30 margin_top_header">
         <div class="menu_outer margin_bottom_20 bg_white padding_top_20 padding_bottom_20 padding_side_10 radius">
           <h2 class="text-align-center">お品書き</h2>
-          <div class="menu"><div class="padding_top_10 padding_bottom_10">1. 材料①<div class="menu1"></div></div></div>
-          <div class="menu"><div class="padding_top_10 padding_bottom_10">2. 材料②<div class="menu2"></div></div></div>
-          <div class="menu"><div class="padding_top_10 padding_bottom_10">3. 調理法<div class="menu3"></div></div></div>
-          <div class="menu"><div class="padding_top_10 padding_bottom_10">4. 味付け<div class="menu4"></div></div></div>
-          <div class="menu"><div class="padding_top_10 padding_bottom_10">5. 拳醤<div class="menu5"></div></div></div>
+          <div class="menu relative"><div class="padding_top_10 padding_bottom_10">1. 材料①<div class="menu_win_lose"></div><div class="menu1"></div></div><div class="menu_img menu_img1"></div></div>
+          <div class="menu relative"><div class="padding_top_10 padding_bottom_10">2. 材料②<div class="menu_win_lose"></div><div class="menu2"></div></div><div class="menu_img menu_img2"></div></div>
+          <div class="menu relative"><div class="padding_top_10 padding_bottom_10">3. 調理法<div class="menu_win_lose"></div><div class="menu3"></div></div><div class="menu_img menu_img3"></div></div>
+          <div class="menu relative"><div class="padding_top_10 padding_bottom_10">4. 味付け<div class="menu_win_lose"></div><div class="menu4"></div></div><div class="menu_img menu_img4"></div></div>
+          <div class="menu relative"><div class="padding_top_10 padding_bottom_10">5. 拳醤<div class="menu_win_lose"></div><div class="menu5"></div></div><div class="menu_img menu_img5"></div></div>
       </div>
         <div class="justify">
           <button class="explain_bt bg_yellow radius margin_center block">「拳醤」とは</button>
@@ -57,10 +57,10 @@
     </div>
     <div class="janken_result modal bg_hazy none">
       <div class="janken_result_inner margin_center">
-        <div class="enemy_no_ken_outer relative">
+        <div class="enemy_no_ken_outer relative margin_bottom_20">
           <div class="enemy_no_ken">木村の<span class="bold">拳</span></div>
-          <div class="enemy_result margin_bottom_10"></div>
-          <div class="win_lose margin_center margin_bottom_20"></div>
+          <div class="enemy_result"></div>
+          <div class="win_lose margin_center"></div>
         </div>
         <div class="janken_result_inner_border radius width100 bg_white padding_side_20 padding_top_20 padding_bottom_20">
           <div class="result_img"></div>
@@ -72,10 +72,11 @@
     <div class="doragon modal wrap bg_red none">
       <img src="img/hand.png" alt="">
     </div>
-    <div class="explain modal bg_white padding_top_30 padding_bottom_20 padding_side_10 none">
-      <div class="explain_inner">
-        <div class="explain_close close_btn">とじる</div>
-        説明
+    <div class="explain modal bg_off_white padding_top_30 padding_bottom_20 padding_side_10 none">
+      <div class="explain_inner bg_white radius height100 padding_side_10 padding_top_20">
+        <div class="explain_close close_btn"><img src="img/x.png" alt=""></div>
+        <h3 class="text-align-center margin_bottom_20">「拳醤」とは</h3>
+        <p></p>
       </div>
     </div>
   </div>
