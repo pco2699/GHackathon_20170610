@@ -47,6 +47,10 @@ $(function () {
         $.get("js/message.json", function (data) {
 
             var message_data = data;
+            if (j_stage == 2) {
+                $('.explain_bt').hide();
+                $('.start_bt').text('つづける。');
+            }
             //スタートボタンでじゃんけん開始
             $('.start_bt').on('click', function () {
                 // Leap 検知開始
@@ -154,8 +158,6 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     j_stage++;
-                    $('.explain_bt').hide();
-                    $('.start_bt').text('つづける。');
                 } else if (com == 2) {
                     $('.enemy_result').html('<img src="img/cho.png">');
                     $('.win_lose').html('<img src="img/win.png">');
@@ -193,8 +195,6 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     j_stage++;
-                    $('.explain_bt').hide();
-                    $('.start_bt').text('つづける。');
                 } else if (com == 3) {
                     $('.enemy_result').html('<img src="img/pa.png">');
                     $('.win_lose').html('<img src="img/lose.png">');
@@ -232,8 +232,6 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     j_stage++;
-                    $('.explain_bt').hide();
-                    $('.start_bt').text('つづける。');
                 }
             });
 
