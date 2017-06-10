@@ -16,10 +16,10 @@
 
 </head>
 
-<body>
-  <div class="wrap margin_center">
-    <header class="padding_bottom_20">
-       <div class="logo margin_top_20">
+<body class="bg_off_white2">
+  <div class="wrap margin_center relative">
+    <header class="padding_top_20 bg_white padding_bottom_20">
+       <div class="logo">
          <h1 class="block margin_center">ケンジャン</h1>
        </div>
     </header>
@@ -34,24 +34,29 @@
       </div>
         <button class="start_bt bg_yellow radius margin_center block">スタート</button>
     </main>
-  </div>
 
-  <div class="janken">
-    <div class="janken_inner bg_white relative">
-        <div class="enemy"></div>
-        <div class="enemy_txt"></div>
-        <div class="hands">
-          <div class=gu_btn>グー</div>
-          <div class="cho_btn">チョキ</div>
-          <div class="pa_btn">パー</div>
-        </div>
-    </div>
-    <div class="janken_result bg_white">
-          <div class="enemy_result"></div>
+    <!-- ここからモーダルウインドウ -->
+    <div class="janken wrap bg_white padding_top_20">
+      <div class="janken_inner bg_white relative radius padding_top_20 padding_side_10">
+          <div class="enemy margin_bottom_20"></div>
+          <div class="enemy_txt"></div>
+          <div class="hands_outer width100">
+            <div class="hands justify">
+              <div class="hand gu_btn circle bg_yellow">グー</div>
+              <div class="hand cho_btn circle bg_yellow">チョキ</div>
+              <div class="hand pa_btn circle bg_yellow">パー</div>
+            </div>
+          </div>
+      </div>
+      <div class="janken_result bg_hazy">
+        <div class="janken_result_inner radius bg_white padding_top_20 padding_bottom_20 padding_side_20">
+          <div class="enemy_result margin_bottom_10"></div>
           <div class="win_lose"></div>
-          <div class="result_txt"></div>
+          <div class="result_txt margin_bottom_10"></div>
           <button class="janken_finish bg_yellow radius margin_center block">元に戻る</button>
-    </div>
+        </div>
+      </div>
+  </div>
 
 </body>
 
