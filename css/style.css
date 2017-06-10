@@ -83,6 +83,10 @@
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
 .relative {
   position: relative;
 }
@@ -145,6 +149,10 @@ button {
   width: 150px;
   padding: 20px;
   border: 0;
+}
+
+.menu_outer {
+  
 }
 
 .menu {
