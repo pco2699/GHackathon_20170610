@@ -29,21 +29,25 @@ $(function () {
                         alt = "tanaka" > )
                     $('.enemy_txt').html(message_data["ms" + enemy])
                 } else if (j_stage == 2) {
-                    $('.enemy').html( < img src = "img/enemy2.jpg"
-                        alt = "kimura" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy2.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 3) {
-                    $('.enemy').html( < img src = "img/enemy3.jpg"
-                        alt = "kuribayashi" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy3.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 4) {
-                    $('.enemy').html( < img src = "img/enemy4.jpg"
-                        alt = "yamazaki" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy4.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 5) {
-                    $('.enemy').html( < img src = "img/enemy5.jpg"
-                        alt = "kodama" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy5.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 }
 
                 //ロード画面表示→消去
