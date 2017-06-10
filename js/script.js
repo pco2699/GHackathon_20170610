@@ -146,6 +146,7 @@ $(function () {
                 }
                 if (j_stage == 6) {
                     $('header').delay(2000).slideUp(1000);
+                    $('.start_cooking').delay(2000).fadeIn(1000);
                 }
             });
 
