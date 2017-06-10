@@ -39,8 +39,8 @@ $(function () {
             }
 
             //ロード画面表示→消去
-            $('.dragon').fadeIn(300);
-            $('.dragon').delay(600).fadeIn(300);
+            $('.doragon').fadeIn(300);
+            $('.doragon').delay(600).fadeIn(300);
 
             //じゃんけんウインドウ表示
             $('.janken').delay(900).fadeIn(300);
