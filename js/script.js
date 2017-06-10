@@ -40,7 +40,7 @@ $(function () {
 
             //ロード画面表示→消去
             $('.doragon').fadeIn(300);
-            $('.doragon').delay(300).fadeOut(300);
+            $('.doragon').delay(400).fadeOut(300);
 
             //じゃんけんウインドウ表示
             $('.janken').delay(300).fadeIn(300);
