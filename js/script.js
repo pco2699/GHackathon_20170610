@@ -22,12 +22,10 @@ $(function () {
                 //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
-                    // 音楽を変える
-//                    $('.audio').html('<source src="sound/battle.mp3" type="audio/mp3">');
-//                    $('.audio')[0].play();
-                    $('.enemy').html( < img src = "img/enemy1.jpg"
-                        alt = "tanaka" > )
-                    $('.enemy_txt').html(message_data["ms" + enemy])
+                    $('.enemy').css({
+                        backgroundImage: 'url("img/enemy1.jpg")'
+                    });
+                    $('.enemy_txt').html(message_data["ms" + enemy]);
                 } else if (j_stage == 2) {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy2.jpg")'
