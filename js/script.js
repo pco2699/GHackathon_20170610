@@ -5,7 +5,9 @@ $(function () {
         var w = $(window).width();
     });
 
-    //スタートボタンでじゃんけんウインドウ表示
+    var j_stage = 1;
+
+    //スタートボタンでじゃんけん開始
     $('.start_bt').on('click', function () {
         //敵の種類を選ぶ
         var enemy = Math.floor(Math.random() * 3 + 1);
@@ -19,63 +21,112 @@ $(function () {
             $('.enemy').html('敵3')
             $('.enemy_txt').html('諦めたらそこで試合終了ですよ')
         }
+        //じゃんけんウインドウ表示
         $('.janken').fadeIn(1000);
     });
 
+    //仮に勝つボタンを押すと結果表示
     $('.janken_win_kari').on('click', function () {
         $('.janken_result').fadeIn(1000);
     })
 
+    //終了を押すとウインドウ消去
     $('.janken_finish').on('click', function () {
         $('.janken').fadeOut(1000);
         $('.janken_result').fadeOut(1000);
     });
 
 
-    //じゃんけん関数(多分使わない)
-    $(".gu_btn").on("click", function () {
+
+
+
+
+
+    Leap.loop(function (frame) {
+        let track_flag = false;
+        if (frame.hands.length > 0 && !track_flag) {
+            for (hand of frame.hands) {
+                let extendedFingers = 0;
+                for (finger of hand.fingers) {
+                    if (finger.extended) extendedFingers++;
+                }
+
+                if (extendedFingers === 0) {
+                    track_flag = true;
+                    $("#gu_btn").click();
+                } else if (extendedFingers === 5) {
+                    track_flag = true;
+                    $("#pa_btn").click();
+                } else if (extendedFingers === 2) {
+                    track_flag = true;
+                    $("#cho_btn").click();
+                }
+            }
+        }
+    });
+
+
+
+
+
+
+
+    //じゃんけん勝敗判定関数
+    $('.gu_btn').on("click", function () {
         var humanGu = 1;
+        //敵の手を乱数で決める
         var com = Math.floor(Math.random() * 3 + 1);
 
         if (com == 1) {
-            $("#pc").text("グー")
-            $("#result").text("あいこです")
+            $('').text("グー");
+            $('.janken_result').text("あいこ");
+            j_stage++;
         } else if (com == 2) {
-            $("#pc").text("チョキ")
-            $("#result").text("勝ちです")
+            $('').text("チョキ");
+            $('.janken_result').text("勝ち");
+            j_stage++;
         } else if (com == 3) {
-            $("#pc").text("パー")
-            $("#result").text("負けです")
+            $('').text("パー");
+            $('.janken_result').text("負け");
+            j_stage++;
         }
     });
 
-    $("#cho_btn").on("click", function () {
+    $('.cho_btn').on("click", function () {
         var humaCho = 2;
+        //敵の手を乱数で決める
         var com = Math.floor(Math.random() * 3 + 1);
 
         if (com == 1) {
-            $("#pc").text("グー")
-            $("#result").text("負けです")
+            $('').text("グー");
+            $('.janken_result').text("負け");
+            j_stage++;
         } else if (com == 2) {
-            $("#pc").text("チョキ")
-            $("#result").text("あいこです")
+            $('').text("チョキ");
+            $('.janken_result').text("あいこ");
+            j_stage++;
         } else if (com == 3) {
-            $("#pc").text("パー")
-            $("#result").text("あいこです")
+            $('').text("パー");
+            $('.janken_result').text("勝ち");
+            j_stage++;
         }
     });
-    $("#par_btn").on("click", function () {
+    $('.pa_btn').on("click", function () {
         var humaPar = 3;
-        var comp = Math.floor(Math.random() * 3 + 1);
-        if (comp == 1) {
-            $("#pc").text("グー")
-            $("#result").text("勝ちです")
-        } else if (comp == 2) {
-            $("#pc").text("チョキ")
-            $("#result").text("負けdす")
-        } else if (comp == 3) {
-            $("#pc").text("パー")
-            $("#result").text("あいこです")
+        //敵の手を乱数で決める
+        var com = Math.floor(Math.random() * 3 + 1);
+        if (com == 1) {
+            $('').text("グー");
+            $('.janken_result').text("勝ち");
+            j_stage++;
+        } else if (com == 2) {
+            $('').text("チョキ");
+            $('.janken_result').text("負け");
+            j_stage++;
+        } else if (com == 3) {
+            $('').text("パー");
+            $('.janken_result').text("あいこ");
+            j_stage++;
         }
     });
 
