@@ -7,15 +7,15 @@ $(function () {
 
 
 
+    var j_stage = 1;
+    var menu_data;
 
 
     $.get("data.json", function (data) {
         //メニューの1-5番目カウント用
-        var j_stage = 1;
-        var menu_data;
         menu_data = $.parseJSON(data);
 
-        alert(menu_data["menu1"]["win"]["gu"]["message"]);
+        //        alert(menu_data["menu1"]["win"]["gu"]["message"]);
         //スタートボタンでじゃんけん開始
         $('.start_bt').on('click', function () {
 
