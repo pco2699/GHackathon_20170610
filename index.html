@@ -15,30 +15,32 @@
 
 </head>
 <body>
-   <header>
-      <div class="logo margin_top_20 margin_bottom_20">
-        <h1 class="block margin_center">ケンジャン</h1>
-      </div>
-   </header>
+  <div class="wrap margin_center">
+    <header>
+       <div class="logo margin_top_20 margin_bottom_20">
+         <h1 class="block margin_center">ケンジャン</h1>
+       </div>
+    </header>
 
-   <main class="bg_off_white padding_top_30 padding_side_10">
-       <div class="menu margin_bottom_20">
-        <div class="menu1">1. 材料①</div>
-        <div class="menu2">2. 材料②</div>
-        <div class="menu3">3. 調理法</div>
-        <div class="menu4">4. 味付け</div>
-        <div class="menu5">5. 拳醤</div>
-     </div>
-       <button class="start_bt bg_yellow radius margin_center block">スタート</button>
-   </main>
+    <main class="bg_off_white padding_top_30 padding_side_10">
+        <div class="menu_outer margin_bottom_20 bg_white padding_top_20 padding_bottom_20 padding_side_10 radius">
+         <div class="menu menu1">1. 材料①</div>
+         <div class="menu menu2">2. 材料②</div>
+         <div class="menu menu3">3. 調理法</div>
+         <div class="menu menu4">4. 味付け</div>
+         <div class="menu menu5">5. 拳醤</div>
+      </div>
+        <button class="start_bt bg_yellow radius margin_center block">スタート</button>
+    </main>
+  </div>
 
   <div class="janken">
     <div class="janken_inner bg_white relative">
         <div class="enemy"></div>
         <div class="enemy_txt"></div>
-        <div class="janken_win_kari bg_yellow radius margin_center block">仮で勝ったことにするボタン</div>
+        <button class="janken_win_kari bg_yellow radius margin_center block">仮で勝ったことにするボタン</button>
     </div>
-    <div class="janken_result">
+    <div class="janken_result bg_white">
       かちました(仮)
       <button class="janken_finish bg_yellow radius margin_center block">元に戻る</button>
     </div>

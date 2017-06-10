@@ -89,7 +89,7 @@
 
 .wrap {
   max-width: 400px;
-  box-shadow: 10px 10px #aaa;
+  box-shadow: 10px 10px 10px #aaa;
 }
 
 /*色系*/
@@ -133,17 +133,21 @@
   top: 100px;
   left: 50%;
   z-index: 2;
-  background: #ffe;
   width: 150px;
   margin-left: -75px;
   height: 100px;
 }
 
 
-/*個別　*/
+/*　個別　*/
 
 button {
   width: 150px;
   padding: 20px;
   border: 0;
+}
+
+.menu {
+  border-bottom: 1px solid red;
+  font-size: 16px;
 }
