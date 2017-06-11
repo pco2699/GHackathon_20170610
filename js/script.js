@@ -110,30 +110,45 @@ $(function () {
                         backgroundImage: 'url("img/enemy1.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
+                    $('.keihin_gu').text(menu_data["menu1"]["win"]["gu"]["item"]);
+                    $('.keihin_cho').text(menu_data["menu1"]["win"]["choki"]["item"]);
+                    $('.keihin_pa').text(menu_data["menu1"]["win"]["par"]["item"]);
                 } else if (j_stage == 2) {
                     playSound("sound/battle2.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy2.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
+                    $('.keihin_gu').text(menu_data["menu2"]["win"]["gu"]["item"]);
+                    $('.keihin_cho').text(menu_data["menu2"]["win"]["choki"]["item"]);
+                    $('.keihin_pa').text(menu_data["menu2"]["win"]["par"]["item"]);
                 } else if (j_stage == 3) {
                     playSound("sound/battle3.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy3.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
+                    $('.keihin_gu').text(menu_data["menu3"]["win"]["gu"]["item"]);
+                    $('.keihin_cho').text(menu_data["menu3"]["win"]["choki"]["item"]);
+                    $('.keihin_pa').text(menu_data["menu3"]["win"]["par"]["item"]);
                 } else if (j_stage == 4) {
                     playSound("sound/battle4.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy4.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
+                    $('.keihin_gu').text(menu_data["menu4"]["win"]["gu"]["item"]);
+                    $('.keihin_cho').text(menu_data["menu4"]["win"]["choki"]["item"]);
+                    $('.keihin_pa').text(menu_data["menu4"]["win"]["par"]["item"]);
                 } else if (j_stage == 5) {
                     playSound("sound/battle5.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy5.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
+                    //                    $('.keihin_gu').text(menu_data["menu5"]["win"]["item"]);
+                    //                    $('.keihin_cho').text(menu_data["menu5"]["win"]["item"]);
+                    //                    $('.keihin_pa').text(menu_data["menu5"]["win"]["item"]);
                 }
 
                 //ロード画面表示→消去
