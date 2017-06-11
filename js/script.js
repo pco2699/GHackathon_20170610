@@ -119,7 +119,7 @@ $(function () {
                 leap_can_track_gesture = false;
 
 
-                //敵のセリフの種類をランダムで選ぶ
+              //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
                     playSound("sound/battle1.mp3", "loop");
@@ -269,7 +269,20 @@ $(function () {
                 leap_can_track_gesture = true;
                 var humanGu = 1;
                 //敵の手を乱数で決める
-                console.log('test');
+
+                for (var i = 0; i < 30; i++) {
+                  setTimeout(function(){
+                    var com = Math.floor(Math.random() * 3 + 1);
+                    if (com == 1) {
+                        $('.enemy_result').html('<img src="img/gu.png">');
+                    } else if (com == 2) {
+                        $('.enemy_result').html('<img src="img/cho.png">');
+                    } else if (com == 3) {
+                        $('.enemy_result').html('<img src="img/pa.png">');
+                    }
+                  }, 100);
+                }
+
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
                     $('.enemy_result').html('<img src="img/gu.png">');
