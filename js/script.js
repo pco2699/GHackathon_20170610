@@ -142,6 +142,7 @@ $(function () {
                     $('.enemy_name').text('木村があらわれた！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
+                    $('.hands_outer').hide();
                     $('.hands_outer').delay(2000).fadeIn(500);
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').text(menu_data["menu2"]["win"]["gu"]["item"]);
@@ -155,6 +156,7 @@ $(function () {
                     $('.enemy_name').text('栗林があらわれた！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
+                    $('.hands_outer').hide();
                     $('.hands_outer').delay(2000).fadeIn(500);
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').text(menu_data["menu3"]["win"]["gu"]["item"]);
@@ -168,6 +170,7 @@ $(function () {
                     $('.enemy_name').text('山崎があらわれた！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
+                    $('.hands_outer').hide();
                     $('.hands_outer').delay(2000).fadeIn(500);
 
                     $('.enemy_txt').html(message_data["ms" + enemy]);
@@ -182,6 +185,7 @@ $(function () {
                     $('.enemy_name').text('児玉があらわれた！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
+                    $('.hands_outer').hide();
                     $('.hands_outer').delay(2000).fadeIn(500);
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').hide();
