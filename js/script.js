@@ -213,7 +213,7 @@ $(function () {
                         })
                         .animate({
                             opacity: '1'
-                        }, 2000);
+                        }, 1000);
 
                     $('.oshinagaki').delay(2000).text("俺の拳醤");
                     $('header').delay(2000).slideUp(1000);
