@@ -232,7 +232,7 @@ $(function () {
                             .animate({
                                 opacity: '0.0'
                             }, 1000, function () {
-                                $('.oshinagaki').text("俺の拳醤");
+                                $('.oshinagaki').html('俺の<img src="img/logo_small.png">');
 
                                 $('.oshinagaki').css({
                                         opacity: '0.0'
