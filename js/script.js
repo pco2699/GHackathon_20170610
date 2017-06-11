@@ -174,6 +174,7 @@ $(function () {
             });
 
             $('.start_cooking').on('click', function () {
+                $(".audio")[0].play();
                 $('.blues').fadeIn(500);
                 $('.blues_inner').html('<iframe width="100%" height="315" src="https://www.youtube.com/embed/OW_txwqmjQQ?rel=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>');
             });
