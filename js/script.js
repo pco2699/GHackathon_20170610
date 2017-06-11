@@ -272,6 +272,7 @@ $(function () {
 
                 for (var i = 0; i < 30; i++) {
                   setTimeout(function(){
+                    console.log(i);
                     var com = Math.floor(Math.random() * 3 + 1);
                     if (com == 1) {
                         $('.enemy_result').html('<img src="img/gu.png">');
