@@ -205,7 +205,7 @@ $(function () {
                             opacity: '1'
                         })
                         .animate({
-                            opacity: '0'
+                            opacity: '0.0'
                         }, 1000);
                     $('.oshinagaki').delay(2000)
                         .css({
