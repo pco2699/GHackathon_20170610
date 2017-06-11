@@ -232,7 +232,7 @@ h4 {
 /*　個別　*/
 
 .logo img {
-  width: 90px;
+  width: 300px;
 }
 
 button {
@@ -268,7 +268,7 @@ button {
 
 .hands_outer {
   position: absolute;
-  bottom: 30px;
+  bottom: 100px;
   left: 0;
 }
 
@@ -277,6 +277,12 @@ button {
   top: 80px;
   left: 0;
   z-index: 2;
+}
+
+.menu_win_lose {
+  width: 40px;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .menu_img {
@@ -301,7 +307,7 @@ button {
 .exp_circle {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -6px;
   color: red;
   width: 30px;
   height: 30px;
@@ -309,4 +315,14 @@ button {
 
 .exp_text {
   margin-left: 40px;
+}
+
+.keihin {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+}
+
+.dots {
+  color: red;
 }
