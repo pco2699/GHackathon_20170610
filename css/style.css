@@ -212,6 +212,10 @@ body{
   z-index: 10;
 }
 
+.find_enemy {
+  z-index: 8;
+}
+
 .explain {
   z-index: 2;
   border: 1px solid red;
