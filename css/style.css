@@ -309,9 +309,13 @@ button {
 }
 
 .menu_win_lose {
-  height: 19px;
+  width: 40px;
   display: inline-block;
   margin-left: 10px;
+}
+
+.menu_win_lose img {
+  margin-top: 4px;
 }
 
 .menu_img {
