@@ -99,7 +99,7 @@ $(function () {
 
     // ローダーを消す
     $('.loading img').fadeIn(500);
-      $('.loading').delay(1500).fadeOut(1500);
+    $('.loading').delay(1500).fadeOut(1500);
 
     //外部データの読み込み
     $.get("js/data.json", function (data) {
@@ -125,6 +125,10 @@ $(function () {
                     playSound("sound/battle1.mp3", "loop");
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy1.jpg")'
+                    });
+                    $('.enemy_name').txt('田中があらわれた！');
+                    $('.find_enemy').fadeIn(500, function () {
+                        $('.find_enemy').delay(2000).fadeOut(500);
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').text(menu_data["menu1"]["win"]["gu"]["item"]);
@@ -200,21 +204,21 @@ $(function () {
                     $('.start_bt').text('つづける。');
                 }
                 if (j_stage == 6) {
-                    $('header').delay(2000).slideUp(1000,function(){
-                      $('.oshinagaki').css({
-                              opacity: '1'
+                    $('header').delay(2000).slideUp(1000, function () {
+                        $('.oshinagaki').css({
+                                opacity: '1'
                             })
                             .animate({
                                 opacity: '0.0'
-                            }, 1000,function(){
-                              $('.oshinagaki').text("俺の拳醤");
+                            }, 1000, function () {
+                                $('.oshinagaki').text("俺の拳醤");
 
-                              $('.oshinagaki').css({
-                                      opacity: '0.0'
-                                  })
-                                  .animate({
-                                      opacity: '1'
-                                  }, 1000);
+                                $('.oshinagaki').css({
+                                        opacity: '0.0'
+                                    })
+                                    .animate({
+                                        opacity: '1'
+                                    }, 1000);
                             });
                     });
                     $('.start_cooking').delay(2000).fadeIn(1000);
@@ -225,13 +229,13 @@ $(function () {
                 $(".audio")[0].pause();
                 $('.blues').fadeIn(500);
                 $('.blues_inner').html('<iframe width="100%" height="315" src="https://www.youtube.com/embed/9PAW5Cden4U?rel=0&amp;showinfo=0&controls=0;autoplay=1" frameborder="0" allowfullscreen></iframe>');
-                setTimeout(function(){
-                           $('.loading').fadeIn(1500, function(){
-                            $('.blues_inner').html('');
-                               playSE("sound/dora.wav", "wav");
-                    console.log("element");
-                });
-                           }, 4000);
+                setTimeout(function () {
+                    $('.loading').fadeIn(1500, function () {
+                        $('.blues_inner').html('');
+                        playSE("sound/dora.wav", "wav");
+                        console.log("element");
+                    });
+                }, 4000);
             });
 
             //じゃんけん勝敗判定関数
@@ -377,8 +381,8 @@ $(function () {
                     is_jk_rslt = true;
                     // j_stage++;
                 } //elseif
-            j_stage++;
-          });
+                j_stage++;
+            });
 
             $('.cho_btn').on("click", function () {
                 // Leap じゃんけん検知OFF
