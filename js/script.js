@@ -206,8 +206,8 @@ $(function () {
                         })
                         .animate({
                             opacity: '0'
-                        }, 2000);
-                    $('.oshinagaki').delay(1000)
+                        }, 1000);
+                    $('.oshinagaki').delay(2000)
                         .css({
                             opacity: '0.0'
                         })
@@ -215,7 +215,7 @@ $(function () {
                             opacity: '1'
                         }, 2000);
 
-                    $('.oshinagaki').delay(1000).text("俺の拳醤");
+                    $('.oshinagaki').delay(2000).text("俺の拳醤");
                     $('header').delay(2000).slideUp(1000);
                     $('.start_cooking').delay(2000).fadeIn(1000);
                 }
