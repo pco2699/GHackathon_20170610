@@ -160,9 +160,9 @@ $(function () {
                         backgroundImage: 'url("img/enemy5.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
-                    //                    $('.keihin_gu').text(menu_data["menu5"]["win"]["item"]);
-                    //                    $('.keihin_cho').text(menu_data["menu5"]["win"]["item"]);
-                    //                    $('.keihin_pa').text(menu_data["menu5"]["win"]["item"]);
+                    $('.keihin_gu').hide();
+                    $('.keihin_cho').hide();
+                    $('.keihin_pa').hide();
                 }
 
                 //ロード画面表示→消去
