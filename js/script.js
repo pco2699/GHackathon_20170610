@@ -17,9 +17,22 @@ $(function () {
         $(".audio")[0].play();
     }
 
-    function playSE(src) {
+    function playSE(src, type) {
+        // SEを流す関数
+        // src = 再生するSEのパス(e.g. sound/hoge.wav)
+        // type = 再生するファイルのタイプ(e.g. wav)
+        // e.g. playSE("sound/boco.mp3", "mp3");
+
+
+        // audio.classからsrc属性とtype属性を削除
         $(".se").removeAttr("src");
+        $(".se").removeAttr("type");
+
+
+        // audio.classからsrc属性とtype属性を追加
         $(".se").attr("src", src);
+        $(".se").attr("type", "audio/" + type);
+
         $(".se")[0].play();
     }
 
