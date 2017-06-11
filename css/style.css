@@ -299,9 +299,15 @@ button {
   background-repeat: no-repeat;
 }
 
+.enemy_txt {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
 .hands_outer {
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
   left: 0;
 }
 
