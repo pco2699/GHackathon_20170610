@@ -261,6 +261,144 @@ $(function () {
                 }, 15000);
             });
 
+            function do_gu(){
+              var com = Math.floor(Math.random() * 3 + 1);
+              if (com == 1) {
+                  $('.enemy_result').html('<img src="img/gu.png">');
+                  $('.win_lose').html('<img src="img/draw.png">');
+                  playSE("sound/draw.wav", "wav");
+                  if (j_stage == 1) {
+                      $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
+                      $('.menu1').text(menu_data["menu1"]["draw"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu1"]["draw"]["gu"]["image"]);
+                      $('.menu_img1').html(menu_data["menu1"]["draw"]["gu"]["image"]);
+                      $('.menu_win_lose1').html('<img src="img/draw_1.png">');
+                  } else if (j_stage == 2) {
+                      $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu2"]["draw"]["gu"]["message"]);
+                      $('.menu2').text(menu_data["menu2"]["draw"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu2"]["draw"]["gu"]["image"]);
+                      $('.menu_img2').html(menu_data["menu2"]["draw"]["gu"]["image"]);
+                      $('.menu_win_lose2').html('<img src="img/draw_1.png">');
+                  } else if (j_stage == 3) {
+                      $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu3"]["draw"]["gu"]["message"]);
+                      $('.menu3').text(menu_data["menu3"]["draw"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu3"]["draw"]["gu"]["image"]);
+                      $('.menu_img3').html(menu_data["menu3"]["draw"]["gu"]["image"]);
+                      $('.menu_win_lose3').html('<img src="img/draw_1.png">');
+                  } else if (j_stage == 4) {
+                      $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu4"]["draw"]["gu"]["message"]);
+                      $('.menu4').text(menu_data["menu4"]["draw"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu4"]["draw"]["gu"]["image"]);
+                      $('.menu_img4').html(menu_data["menu4"]["draw"]["gu"]["image"]);
+                      $('.menu_win_lose4').html('<img src="img/draw_1.png">');
+                  } else if (j_stage == 5) {
+                      $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu5"]["draw"]["message"]);
+                      $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
+                      $('.result_img').html(menu_data["menu5"]["draw"]["image"]);
+                      $('.menu_img5').html(menu_data["menu5"]["draw"]["image"]);
+                      $('.menu_win_lose5').html('<img src="img/draw_1.png">');
+                      $('.start_bt').hide();
+                  }
+                  $('.janken_result').fadeIn(300);
+                  is_jk_rslt = true;
+                  // j_stage++;
+              } else if (com == 2) {
+                  $('.enemy_result').html('<img src="img/cho.png">');
+                  $('.win_lose').html('<img src="img/win.png">');
+                  playSE("sound/cheers.mp3", "mp3");
+                  if (j_stage == 1) {
+                      $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu1"]["win"]["gu"]["message"]);
+                      $('.menu1').text(menu_data["menu1"]["win"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu1"]["win"]["gu"]["image"]);
+                      $('.menu_img1').html(menu_data["menu1"]["win"]["gu"]["image"]);
+                      $('.menu_win_lose1').html('<img src="img/win_1.png">');
+                  } else if (j_stage == 2) {
+                      $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu2"]["win"]["gu"]["message"]);
+                      $('.menu2').text(menu_data["menu2"]["win"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu2"]["win"]["gu"]["image"]);
+                      $('.menu_img2').html(menu_data["menu2"]["win"]["gu"]["image"]);
+                      $('.menu_win_lose2').html('<img src="img/win_1.png">');
+                  } else if (j_stage == 3) {
+                      $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu3"]["win"]["gu"]["message"]);
+                      $('.menu3').text(menu_data["menu3"]["win"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu3"]["win"]["gu"]["image"]);
+                      $('.menu_img3').html(menu_data["menu3"]["win"]["gu"]["image"]);
+                      $('.menu_win_lose3').html('<img src="img/win_1.png">');
+                  } else if (j_stage == 4) {
+                      $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu4"]["win"]["gu"]["message"]);
+                      $('.menu4').text(menu_data["menu4"]["win"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu4"]["win"]["gu"]["image"]);
+                      $('.menu_img4').html(menu_data["menu4"]["win"]["gu"]["image"]);
+                      $('.menu_win_lose4').html('<img src="img/win_1.png">');
+                  } else if (j_stage == 5) {
+                      $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
+                      $('.menu5').text(menu_data["menu5"]["win"]["item"]);
+                      $('.result_img').html(menu_data["menu5"]["win"]["image"]);
+                      $('.menu_img5').html(menu_data["menu5"]["win"]["image"]);
+                      $('.menu_win_lose5').html('<img src="img/win_1.png">');
+                      $('.start_bt').hide();
+                  }
+                  $('.janken_result').fadeIn(300);
+                  is_jk_rslt = true;
+                  // j_stage++;
+              } else if (com == 3) {
+                  $('.enemy_result').html('<img src="img/pa.png">');
+                  $('.win_lose').html('<img src="img/lose.png">');
+                  playSE("sound/lose.wav", "wav");
+                  if (j_stage == 1) {
+                      $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu1"]["lose"]["gu"]["message"]);
+                      $('.menu1').text(menu_data["menu1"]["lose"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu1"]["lose"]["gu"]["image"]);
+                      $('.menu_img1').html(menu_data["menu1"]["lose"]["gu"]["image"]);
+                      $('.menu_win_lose1').html('<img src="img/lose_1.png">');
+                  } else if (j_stage == 2) {
+                      $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu2"]["lose"]["gu"]["message"]);
+                      $('.menu2').text(menu_data["menu2"]["lose"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu2"]["lose"]["gu"]["image"]);
+                      $('.menu_img2').html(menu_data["menu2"]["lose"]["gu"]["image"]);
+                      $('.menu_win_lose2').html('<img src="img/lose_1.png">');
+                  } else if (j_stage == 3) {
+                      $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu3"]["lose"]["gu"]["message"]);
+                      $('.menu3').text(menu_data["menu3"]["lose"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu3"]["lose"]["gu"]["image"]);
+                      $('.menu_img3').html(menu_data["menu3"]["lose"]["gu"]["image"]);
+                      $('.menu_win_lose3').html('<img src="img/lose_1.png">');
+                  } else if (j_stage == 4) {
+                      $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu4"]["lose"]["gu"]["message"]);
+                      $('.menu4').text(menu_data["menu4"]["lose"]["gu"]["item"]);
+                      $('.result_img').html(menu_data["menu4"]["lose"]["gu"]["image"]);
+                      $('.menu_img4').html(menu_data["menu4"]["lose"]["gu"]["image"]);
+                      $('.menu_win_lose4').html('<img src="img/lose_1.png">');
+                  } else if (j_stage == 5) {
+                      $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
+                      $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
+                      $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
+                      $('.result_img').html(menu_data["menu5"]["lose"]["image"]);
+                      $('.menu_img5').html(menu_data["menu5"]["lose"]["image"]);
+                      $('.menu_win_lose5').html('<img src="img/lose_1.png">');
+                      $('.start_bt').hide();
+                  }
+                  $('.janken_result').fadeIn(300);
+                  is_jk_rslt = true;
+                  // j_stage++;
+              } //elseif
+              j_stage++;
+            }
+
             //じゃんけん勝敗判定関数
             $('.gu_btn').on("click", function () {
                 // Leap じゃんけん検知OFF
@@ -272,8 +410,6 @@ $(function () {
 
                 for (var i = 0; i < 30; i++) with({i:i}){
                   setTimeout(function(){
-                    console.log(i);
-
                     var com = Math.floor(Math.random() * 3 + 1);
                     if (com == 1) {
                         $('.enemy_result').html('<img src="img/gu.png">');
@@ -282,145 +418,12 @@ $(function () {
                     } else if (com == 3) {
                         $('.enemy_result').html('<img src="img/pa.png">');
                     }
-                  }, i * 1000);
+                    if (i==29) {
+                      do_gu();
+                    }
+                  }, i * 50)
                 }
-
-                var com = Math.floor(Math.random() * 3 + 1);
-                if (com == 1) {
-                    $('.enemy_result').html('<img src="img/gu.png">');
-                    $('.win_lose').html('<img src="img/draw.png">');
-                    playSE("sound/draw.wav", "wav");
-                    if (j_stage == 1) {
-                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
-                        $('.menu1').text(menu_data["menu1"]["draw"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu1"]["draw"]["gu"]["image"]);
-                        $('.menu_img1').html(menu_data["menu1"]["draw"]["gu"]["image"]);
-                        $('.menu_win_lose1').html('<img src="img/draw_1.png">');
-                    } else if (j_stage == 2) {
-                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu2"]["draw"]["gu"]["message"]);
-                        $('.menu2').text(menu_data["menu2"]["draw"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu2"]["draw"]["gu"]["image"]);
-                        $('.menu_img2').html(menu_data["menu2"]["draw"]["gu"]["image"]);
-                        $('.menu_win_lose2').html('<img src="img/draw_1.png">');
-                    } else if (j_stage == 3) {
-                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu3"]["draw"]["gu"]["message"]);
-                        $('.menu3').text(menu_data["menu3"]["draw"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu3"]["draw"]["gu"]["image"]);
-                        $('.menu_img3').html(menu_data["menu3"]["draw"]["gu"]["image"]);
-                        $('.menu_win_lose3').html('<img src="img/draw_1.png">');
-                    } else if (j_stage == 4) {
-                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu4"]["draw"]["gu"]["message"]);
-                        $('.menu4').text(menu_data["menu4"]["draw"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu4"]["draw"]["gu"]["image"]);
-                        $('.menu_img4').html(menu_data["menu4"]["draw"]["gu"]["image"]);
-                        $('.menu_win_lose4').html('<img src="img/draw_1.png">');
-                    } else if (j_stage == 5) {
-                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu5"]["draw"]["message"]);
-                        $('.menu5').text(menu_data["menu5"]["draw"]["item"]);
-                        $('.result_img').html(menu_data["menu5"]["draw"]["image"]);
-                        $('.menu_img5').html(menu_data["menu5"]["draw"]["image"]);
-                        $('.menu_win_lose5').html('<img src="img/draw_1.png">');
-                        $('.start_bt').hide();
-                    }
-                    $('.janken_result').fadeIn(300);
-                    is_jk_rslt = true;
-                    // j_stage++;
-                } else if (com == 2) {
-                    $('.enemy_result').html('<img src="img/cho.png">');
-                    $('.win_lose').html('<img src="img/win.png">');
-                    playSE("sound/cheers.mp3", "mp3");
-                    if (j_stage == 1) {
-                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu1"]["win"]["gu"]["message"]);
-                        $('.menu1').text(menu_data["menu1"]["win"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu1"]["win"]["gu"]["image"]);
-                        $('.menu_img1').html(menu_data["menu1"]["win"]["gu"]["image"]);
-                        $('.menu_win_lose1').html('<img src="img/win_1.png">');
-                    } else if (j_stage == 2) {
-                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu2"]["win"]["gu"]["message"]);
-                        $('.menu2').text(menu_data["menu2"]["win"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu2"]["win"]["gu"]["image"]);
-                        $('.menu_img2').html(menu_data["menu2"]["win"]["gu"]["image"]);
-                        $('.menu_win_lose2').html('<img src="img/win_1.png">');
-                    } else if (j_stage == 3) {
-                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu3"]["win"]["gu"]["message"]);
-                        $('.menu3').text(menu_data["menu3"]["win"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu3"]["win"]["gu"]["image"]);
-                        $('.menu_img3').html(menu_data["menu3"]["win"]["gu"]["image"]);
-                        $('.menu_win_lose3').html('<img src="img/win_1.png">');
-                    } else if (j_stage == 4) {
-                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu4"]["win"]["gu"]["message"]);
-                        $('.menu4').text(menu_data["menu4"]["win"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu4"]["win"]["gu"]["image"]);
-                        $('.menu_img4').html(menu_data["menu4"]["win"]["gu"]["image"]);
-                        $('.menu_win_lose4').html('<img src="img/win_1.png">');
-                    } else if (j_stage == 5) {
-                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu5"]["win"]["message"]);
-                        $('.menu5').text(menu_data["menu5"]["win"]["item"]);
-                        $('.result_img').html(menu_data["menu5"]["win"]["image"]);
-                        $('.menu_img5').html(menu_data["menu5"]["win"]["image"]);
-                        $('.menu_win_lose5').html('<img src="img/win_1.png">');
-                        $('.start_bt').hide();
-                    }
-                    $('.janken_result').fadeIn(300);
-                    is_jk_rslt = true;
-                    // j_stage++;
-                } else if (com == 3) {
-                    $('.enemy_result').html('<img src="img/pa.png">');
-                    $('.win_lose').html('<img src="img/lose.png">');
-                    playSE("sound/lose.wav", "wav");
-                    if (j_stage == 1) {
-                        $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu1"]["lose"]["gu"]["message"]);
-                        $('.menu1').text(menu_data["menu1"]["lose"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu1"]["lose"]["gu"]["image"]);
-                        $('.menu_img1').html(menu_data["menu1"]["lose"]["gu"]["image"]);
-                        $('.menu_win_lose1').html('<img src="img/lose_1.png">');
-                    } else if (j_stage == 2) {
-                        $('.enemy_no_ken').html('木村の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu2"]["lose"]["gu"]["message"]);
-                        $('.menu2').text(menu_data["menu2"]["lose"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu2"]["lose"]["gu"]["image"]);
-                        $('.menu_img2').html(menu_data["menu2"]["lose"]["gu"]["image"]);
-                        $('.menu_win_lose2').html('<img src="img/lose_1.png">');
-                    } else if (j_stage == 3) {
-                        $('.enemy_no_ken').html('栗林の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu3"]["lose"]["gu"]["message"]);
-                        $('.menu3').text(menu_data["menu3"]["lose"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu3"]["lose"]["gu"]["image"]);
-                        $('.menu_img3').html(menu_data["menu3"]["lose"]["gu"]["image"]);
-                        $('.menu_win_lose3').html('<img src="img/lose_1.png">');
-                    } else if (j_stage == 4) {
-                        $('.enemy_no_ken').html('山崎の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu4"]["lose"]["gu"]["message"]);
-                        $('.menu4').text(menu_data["menu4"]["lose"]["gu"]["item"]);
-                        $('.result_img').html(menu_data["menu4"]["lose"]["gu"]["image"]);
-                        $('.menu_img4').html(menu_data["menu4"]["lose"]["gu"]["image"]);
-                        $('.menu_win_lose4').html('<img src="img/lose_1.png">');
-                    } else if (j_stage == 5) {
-                        $('.enemy_no_ken').html('児玉の<span class="bold">拳</span>');
-                        $('.result_txt').text(menu_data["menu5"]["lose"]["message"]);
-                        $('.menu5').text(menu_data["menu5"]["lose"]["item"]);
-                        $('.result_img').html(menu_data["menu5"]["lose"]["image"]);
-                        $('.menu_img5').html(menu_data["menu5"]["lose"]["image"]);
-                        $('.menu_win_lose5').html('<img src="img/lose_1.png">');
-                        $('.start_bt').hide();
-                    }
-                    $('.janken_result').fadeIn(300);
-                    is_jk_rslt = true;
-                    // j_stage++;
-                } //elseif
-                j_stage++;
-            });
+              });
 
             $('.cho_btn').on("click", function () {
                 // Leap じゃんけん検知OFF
