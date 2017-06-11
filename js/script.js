@@ -216,7 +216,9 @@ $(function () {
                         }, 1000);
 
                     $('.oshinagaki').delay(2000).text("俺の拳醤");
-                    $('header').delay(2000).slideUp(1000);
+                    $('header').delay(2000).slideUp(1000,function(){
+                      console.log('jijij');
+                    });
                     $('.start_cooking').delay(2000).fadeIn(1000);
                 }
             });
