@@ -97,6 +97,9 @@ $(function () {
         }
     });
 
+    // ローダーを消す
+    $('.loading img').fadeIn(500);
+      $('.loading').delay(1500).fadeOut(1500);
 
     //外部データの読み込み
     $.get("js/data.json", function (data) {
@@ -168,9 +171,6 @@ $(function () {
                 //ロード画面表示→消去
                 $('.doragon').fadeIn(300);
                 $('.doragon').delay(400).fadeOut(300);
-
-                //ロゴを小さく
-                $('.logo img').css('width','150px');
 
                 //じゃんけんウインドウ表示
                 $('.janken').delay(300).fadeIn(300);
