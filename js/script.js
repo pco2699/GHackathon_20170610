@@ -200,7 +200,7 @@ $(function () {
                     $('.start_bt').text('つづける。');
                 }
                 if (j_stage == 6) {
-                    $('.oshinagaki').delay(1000)
+                    $('.oshinagaki').delay(3000)
                         .css({
                             opacity: '1'
                         })
