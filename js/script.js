@@ -237,7 +237,6 @@ $(function () {
                 //敵の手を乱数で決める
                 console.log('test');
             for (var i = 0; i < 30; i++) {
-              setTimeout(function(){
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
                     $('.enemy_result').html('<img src="img/gu.png">');
@@ -372,7 +371,6 @@ $(function () {
                     is_jk_rslt = true;
                     // j_stage++;
                 } //elseif
-              }, 100);
               } //for
             j_stage++;
           });
