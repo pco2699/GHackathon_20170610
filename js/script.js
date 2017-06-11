@@ -45,43 +45,57 @@ $(function () {
     // じゃんけん結果画面か
     let is_jk_rslt = false;
 
+    // 判定count
+    let leap_count = 0;
+
     Leap.loop({
         enableGestures: true
     }, function (frame) {
         if (frame.hands.length > 0 && leap_can_track_janken) {
+            console.log("leap_count" + leap_count);
+
             for (hand of frame.hands) {
-                let extendedFingers = 0;
-                for (finger of hand.fingers) {
-                    if (finger.extended) extendedFingers++;
-                }
-                if (extendedFingers === 0) {
-                    $(".gu_btn").click();
-                } else if (extendedFingers === 5) {
-                    $(".pa_btn").click();
-                } else if (extendedFingers === 2) {
-                    $(".cho_btn").click();
+                    let extendedFingers = 0;
+                    for (finger of hand.fingers) {
+                        if (finger.extended) extendedFingers++;
+                    }
+                    if (extendedFingers === 0 || extendedFingers === 5 || extendedFingers === 2) {
+                        leap_count++;
+                    }
+                    if (leap_count > 100){
+                        leap_count = 0;
+                        if (extendedFingers === 0) {
+                            $(".gu_btn").click();
+                        } else if (extendedFingers === 5) {
+                            $(".pa_btn").click();
+                        } else if (extendedFingers === 2) {
+                            $(".cho_btn").click();
+                        }
+                    }
                 }
             }
-        }
         if (frame.gestures.length > 0 && leap_can_track_gesture) {
-            console.log("Hey");
             frame.gestures.forEach(function (gesture) {
-                switch (gesture.type) {
-                    case "circle":
-                        break;
-                    case "keyTap":
-                        break;
-                    case "screenTap":
-                        $('.start_bt').click();
-                        break;
-                    case "swipe":
-                        if (is_jk_rslt) {
-                            $('.janken_finish').click();
+                        switch (gesture.type) {
+                            case "circle":
+                                break;
+                            case "keyTap":
+                                break;
+                            case "screenTap":
+                                console.log("screen tap is called");
+                                if (is_jk_rslt) {
+                                    $('.janken_finish').click();
+                                }
+                                else {
+                                    $('.start_bt').click();
+                                }
+                                break;
+                            case "swipe":
+
+                                break;
                         }
-                        break;
-                }
-            });
-        }
+                });
+            }
     });
 
 
@@ -101,6 +115,7 @@ $(function () {
                 leap_can_track_janken = true;
                 // Leap ジェスチャ検知OFF
                 leap_can_track_gesture = false;
+
 
                 //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
