@@ -372,11 +372,10 @@ $(function () {
                     is_jk_rslt = true;
                     // j_stage++;
                 }
-                
-              }, 10 *i);
               }
-              j_stage++;
-            });
+            }, 10 *i);
+            j_stage++;
+          });
 
             $('.cho_btn').on("click", function () {
                 // Leap じゃんけん検知OFF
