@@ -200,9 +200,22 @@ $(function () {
                     $('.start_bt').text('つづける。');
                 }
                 if (j_stage == 6) {
-                    $('.oshinagaki').delay(3000).fadeOut(500);
-                    $('.oshinagaki').delay(3500).text("俺の拳醤");
-                    $('.oshinagaki').delay(3500).fadeIn(1000);
+                    $('.oshinagaki').delay(1000)
+                        .css({
+                            opacity: '1'
+                        })
+                        .animate({
+                            opacity: '0'
+                        }, 1000);
+                    $('.oshinagaki').delay(2000)
+                        .css({
+                            opacity: '0.0'
+                        })
+                        .animate({
+                            opacity: '1'
+                        }, 2000);
+
+                    $('.oshinagaki').delay(1000).text("俺の拳醤");
                     $('header').delay(2000).slideUp(1000);
                     $('.start_cooking').delay(2000).fadeIn(1000);
                 }
