@@ -193,6 +193,7 @@ $(function () {
                 if (com == 1) {
                     $('.enemy_result').html('<img src="img/gu.png">');
                     $('.win_lose').html('<img src="img/draw.png">');
+                    playSE("sound/draw.wav", "wav");
                     if (j_stage == 1) {
                         $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["draw"]["gu"]["message"]);
@@ -237,6 +238,7 @@ $(function () {
                 } else if (com == 2) {
                     $('.enemy_result').html('<img src="img/cho.png">');
                     $('.win_lose').html('<img src="img/win.png">');
+                    playSE("sound/cheers.mp3", "mp3");
                     if (j_stage == 1) {
                         $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["win"]["gu"]["message"]);
@@ -281,6 +283,7 @@ $(function () {
                 } else if (com == 3) {
                     $('.enemy_result').html('<img src="img/pa.png">');
                     $('.win_lose').html('<img src="img/lose.png">');
+                    playSE("sound/lose.wav", "wav");
                     if (j_stage == 1) {
                         $('.enemy_no_ken').html('田中の<span class="bold">拳</span>');
                         $('.result_txt').text(menu_data["menu1"]["lose"]["gu"]["message"]);
