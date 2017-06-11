@@ -383,3 +383,8 @@ h2.oshinagaki {
   margin-top: 10px;
   margin-bottom: 16px;
 }
+
+.logo_small {
+  display: inline-block;
+  width: 90px;
+}

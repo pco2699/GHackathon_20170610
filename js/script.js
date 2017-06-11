@@ -232,7 +232,8 @@ $(function () {
                             .animate({
                                 opacity: '0.0'
                             }, 1000, function () {
-                                $('.oshinagaki').html('俺の<img src="img/logo_small.png">');
+                                $('.oshinagaki').html('俺の<img src="img/logo_small.png class="logo_small"">');
+                                $('.oshinagaki').addClass('flex-center');
 
                                 $('.oshinagaki').css({
                                         opacity: '0.0'
