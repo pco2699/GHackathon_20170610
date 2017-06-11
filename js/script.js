@@ -341,7 +341,7 @@ $(function () {
 
                         j_stage++;
                     }
-
+                    console.log(i);
                 }
 
             });
