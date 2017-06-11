@@ -270,9 +270,10 @@ $(function () {
                 var humanGu = 1;
                 //敵の手を乱数で決める
 
-                for (var i = 0; i < 30; i++) {
+                for (var i = 0; i < 30; i++) with({i:i}){
                   setTimeout(function(){
                     console.log(i);
+
                     var com = Math.floor(Math.random() * 3 + 1);
                     if (com == 1) {
                         $('.enemy_result').html('<img src="img/gu.png">');
@@ -281,7 +282,7 @@ $(function () {
                     } else if (com == 3) {
                         $('.enemy_result').html('<img src="img/pa.png">');
                     }
-                  }, 1000);
+                  }, i * 1000);
                 }
 
                 var com = Math.floor(Math.random() * 3 + 1);
