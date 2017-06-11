@@ -127,9 +127,9 @@ $(function () {
                         backgroundImage: 'url("img/enemy1.jpg")'
                     });
                     $('.enemy_name').text('田中があらわれた！');
-                    $('.find_enemy').fadeIn(500);
-                    $('.find_enemy').delay(2000).fadeOut(500);
-
+                    $('.enemy_name').show();
+                    $('.enemy_name').delay(2000).fadeOut(500);
+                    $('.hands_outer').delay(2000).fadeIn(500);
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').text(menu_data["menu1"]["win"]["gu"]["item"]);
                     $('.keihin_cho').text(menu_data["menu1"]["win"]["choki"]["item"]);
@@ -139,6 +139,9 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy2.jpg")'
                     });
+                    $('.enemy_name').text('田中があらわれた！');
+                    $('.find_enemy').fadeIn(500);
+                    $('.find_enemy').delay(2000).fadeOut(500);
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').text(menu_data["menu2"]["win"]["gu"]["item"]);
                     $('.keihin_cho').text(menu_data["menu2"]["win"]["choki"]["item"]);
@@ -148,6 +151,9 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy3.jpg")'
                     });
+                    $('.enemy_name').text('田中があらわれた！');
+                    $('.find_enemy').fadeIn(500);
+                    $('.find_enemy').delay(2000).fadeOut(500);
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').text(menu_data["menu3"]["win"]["gu"]["item"]);
                     $('.keihin_cho').text(menu_data["menu3"]["win"]["choki"]["item"]);
@@ -157,6 +163,10 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy4.jpg")'
                     });
+                    $('.enemy_name').text('田中があらわれた！');
+                    $('.find_enemy').fadeIn(500);
+                    $('.find_enemy').delay(2000).fadeOut(500);
+
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').text(menu_data["menu4"]["win"]["gu"]["item"]);
                     $('.keihin_cho').text(menu_data["menu4"]["win"]["choki"]["item"]);
@@ -166,6 +176,9 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy5.jpg")'
                     });
+                    $('.enemy_name').text('田中があらわれた！');
+                    $('.find_enemy').fadeIn(500);
+                    $('.find_enemy').delay(2000).fadeOut(500);
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').hide();
                     $('.keihin_cho').hide();
