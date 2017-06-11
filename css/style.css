@@ -232,7 +232,7 @@ h4 {
 /*　個別　*/
 
 .logo img {
-  width: 400px;
+  width: 300px;
 }
 
 button {
@@ -268,7 +268,7 @@ button {
 
 .hands_outer {
   position: absolute;
-  bottom: 30px;
+  bottom: 100px;
   left: 0;
 }
 
