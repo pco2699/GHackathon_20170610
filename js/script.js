@@ -97,6 +97,9 @@ $(function () {
         }
     });
 
+    // ローダーを消す
+    $('.loading img').fadeIn(500);
+      $('.loading').delay(1500).fadeOut(1500);
 
     //外部データの読み込み
     $.get("js/data.json", function (data) {
@@ -160,9 +163,9 @@ $(function () {
                         backgroundImage: 'url("img/enemy5.jpg")'
                     });
                     $('.enemy_txt').html(message_data["ms" + enemy]);
-                    //                    $('.keihin_gu').text(menu_data["menu5"]["win"]["item"]);
-                    //                    $('.keihin_cho').text(menu_data["menu5"]["win"]["item"]);
-                    //                    $('.keihin_pa').text(menu_data["menu5"]["win"]["item"]);
+                    $('.keihin_gu').hide();
+                    $('.keihin_cho').hide();
+                    $('.keihin_pa').hide();
                 }
 
                 //ロード画面表示→消去
@@ -197,10 +200,23 @@ $(function () {
                     $('.start_bt').text('つづける。');
                 }
                 if (j_stage == 6) {
-                    $('.oshinagaki').delay(2000).fadeOut(500);
-                    $('.oshinagaki').delay(2000).text("俺の拳醤");
-                    $('.oshinagaki').delay(2500).fadeIn(1000);
-                    $('header').delay(2000).slideUp(1000);
+                    $('header').delay(2000).slideUp(1000,function(){
+                      $('.oshinagaki').css({
+                              opacity: '1'
+                            })
+                            .animate({
+                                opacity: '0.0'
+                            }, 1000,function(){
+                              $('.oshinagaki').text("俺の拳醤");
+
+                              $('.oshinagaki').css({
+                                      opacity: '0.0'
+                                  })
+                                  .animate({
+                                      opacity: '1'
+                                  }, 1000);
+                            });
+                    });
                     $('.start_cooking').delay(2000).fadeIn(1000);
                 }
             });
