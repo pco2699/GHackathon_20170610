@@ -206,16 +206,16 @@ $(function () {
                             })
                             .animate({
                                 opacity: '0.0'
-                            }, 1000);
-                      $('.oshinagaki').delay(1000).text("俺の拳醤");
+                            }, 1000,function(){
+                              $('.oshinagaki').text("俺の拳醤");
 
-                      $('.oshinagaki').delay(1000)
-                          .css({
-                              opacity: '0.0'
-                          })
-                          .animate({
-                              opacity: '1'
-                          }, 1000);
+                              $('.oshinagaki').css({
+                                      opacity: '0.0'
+                                  })
+                                  .animate({
+                                      opacity: '1'
+                                  }, 1000);
+                            });
                     });
                     $('.start_cooking').delay(2000).fadeIn(1000);
                 }
