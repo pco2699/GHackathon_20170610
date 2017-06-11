@@ -126,7 +126,7 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy1.jpg")'
                     });
-                    $('.enemy_name').txt('田中があらわれた！');
+                    $('.enemy_name').text('田中があらわれた！');
                     $('.find_enemy').fadeIn(500, function () {
                         $('.find_enemy').delay(2000).fadeOut(500);
                     });
