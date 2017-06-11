@@ -197,9 +197,9 @@ $(function () {
                     $('.start_bt').text('つづける。');
                 }
                 if (j_stage == 6) {
-                    $('.text-align-center').fadeOut(500);
-                    $('.text-align-center').text("俺の拳醤");
-                    $('.text-align-center').delay(3000).fadeIn(1000);
+                    $('.text-align-center').delay(2000).fadeOut(500);
+                    $('.text-align-center').delay(2000).text("俺の拳醤");
+                    $('.text-align-center').delay(2500).fadeIn(1000);
                     $('header').delay(2000).slideUp(1000);
                     $('.start_cooking').delay(2000).fadeIn(1000);
                 }
