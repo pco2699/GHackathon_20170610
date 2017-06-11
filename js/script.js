@@ -203,6 +203,8 @@ $(function () {
 
 
                 var humanGu = 1;
+
+                for(var i=0,i++,i<20){
                 //敵の手を乱数で決める
                 var com = Math.floor(Math.random() * 3 + 1);
                 if (com == 1) {
@@ -248,7 +250,6 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     is_jk_rslt = true;
-
                     j_stage++;
                 } else if (com == 2) {
                     $('.enemy_result').html('<img src="img/cho.png">');
@@ -293,7 +294,6 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     is_jk_rslt = true;
-
                     j_stage++;
                 } else if (com == 3) {
                     $('.enemy_result').html('<img src="img/pa.png">');
@@ -341,7 +341,12 @@ $(function () {
 
                     j_stage++;
                 }
+
+                }
+
             });
+
+
 
             $('.cho_btn').on("click", function () {
                 // Leap じゃんけん検知OFF
