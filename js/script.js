@@ -119,7 +119,7 @@ $(function () {
                 leap_can_track_gesture = false;
 
 
-                //敵のセリフの種類をランダムで選ぶ
+              //敵のセリフの種類をランダムで選ぶ
                 var enemy = Math.floor(Math.random() * 20 + 1);
                 if (j_stage == 1) {
                     playSound("sound/battle1.mp3", "loop");
