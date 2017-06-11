@@ -15,15 +15,17 @@ h4 {
 }
 
 /*フォント*/
+/*
 @font-face {
     font-family: 'MyFont';
     src: url(../font/reisyo.otf);
+*/
 /*    src: url(../font/Mouhitu.otf);*/
 /*    src: url(../font/Kouzan.otf);*/
-}
+/*}*/
 
 body{
-    font-family: 'MyFont';
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
 }
 
 /* マージン */
