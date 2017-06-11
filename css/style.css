@@ -307,8 +307,8 @@ button {
 
 .hands_outer {
   position: absolute;
-  bottom: 80px;
-  left: 0;
+  bottom: 60px;
+  left: 10px;
 }
 
 .win_lose {
