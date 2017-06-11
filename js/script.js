@@ -206,7 +206,7 @@ $(function () {
                         })
                         .animate({
                             opacity: '0'
-                        }, 1000);
+                        }, 2000);
                     $('.oshinagaki').delay(2000)
                         .css({
                             opacity: '0.0'
