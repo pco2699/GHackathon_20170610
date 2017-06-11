@@ -172,6 +172,12 @@ $(function () {
                 $('.doragon').fadeIn(300);
                 $('.doragon').delay(400).fadeOut(300);
 
+<<<<<<< HEAD
+=======
+                //ロゴを小さく
+                $('.logo img').css('width', '150px');
+
+>>>>>>> e6ffe9b1a2b2bcdeb3ecd5e9a922bce455dea0b9
                 //じゃんけんウインドウ表示
                 $('.janken').delay(300).fadeIn(300);
             });
@@ -205,15 +211,15 @@ $(function () {
                             opacity: '1'
                         })
                         .animate({
-                            opacity: '0'
-                        }, 2000);
+                            opacity: '0.0'
+                        }, 1000);
                     $('.oshinagaki').delay(2000)
                         .css({
                             opacity: '0.0'
                         })
                         .animate({
                             opacity: '1'
-                        }, 2000);
+                        }, 1000);
 
                     $('.oshinagaki').delay(2000).text("俺の拳醤");
                     $('header').delay(2000).slideUp(1000);
