@@ -225,6 +225,13 @@ $(function () {
                 $(".audio")[0].pause();
                 $('.blues').fadeIn(500);
                 $('.blues_inner').html('<iframe width="100%" height="315" src="https://www.youtube.com/embed/9PAW5Cden4U?rel=0&amp;showinfo=0&controls=0;autoplay=1" frameborder="0" allowfullscreen></iframe>');
+                setTimeout(function(){
+                           $('.loading').fadeIn(1500, function(){
+                            $('.blues_inner').html('');
+                               playSE("sound/dora.wav", "wav");
+                    console.log("element");
+                });
+                           }, 4000);
             });
 
             //じゃんけん勝敗判定関数
