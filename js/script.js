@@ -170,7 +170,7 @@ $(function () {
                 $('.doragon').delay(400).fadeOut(300);
 
                 //ロゴを小さく
-                $('.logo img').css('width','150px');
+                $('.logo img').css('width', '150px');
 
                 //じゃんけんウインドウ表示
                 $('.janken').delay(300).fadeIn(300);
@@ -207,7 +207,7 @@ $(function () {
                         .animate({
                             opacity: '0'
                         }, 2000);
-                    $('.oshinagaki').delay(2000)
+                    $('.oshinagaki').delay(1000)
                         .css({
                             opacity: '0.0'
                         })
@@ -215,7 +215,7 @@ $(function () {
                             opacity: '1'
                         }, 2000);
 
-                    $('.oshinagaki').delay(2000).text("俺の拳醤");
+                    $('.oshinagaki').delay(1000).text("俺の拳醤");
                     $('header').delay(2000).slideUp(1000);
                     $('.start_cooking').delay(2000).fadeIn(1000);
                 }
