@@ -280,7 +280,7 @@ $(function () {
                     } else if (com == 3) {
                         $('.enemy_result').html('<img src="img/pa.png">');
                     }
-                  }, 100);
+                  }, 1000);
                 }
 
                 var com = Math.floor(Math.random() * 3 + 1);
