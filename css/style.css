@@ -272,7 +272,6 @@ button {
   border-bottom: 1px solid red;
   font-size: 16px;
   padding: 12px 0 1px;
-  padding-left: 20px;
 }
 
 .menu h4 {
@@ -310,7 +309,7 @@ button {
 }
 
 .menu_win_lose {
-  width: 40px;
+  height: 19px;
   display: inline-block;
   margin-left: 10px;
 }
@@ -341,6 +340,10 @@ button {
   color: red;
   width: 30px;
   height: 30px;
+}
+
+.menu .exp_circle {
+  top: -2px;
 }
 
 .exp_text {
