@@ -249,6 +249,10 @@ button {
   padding-left: 20px;
 }
 
+.menu h4 {
+  margin-top: 10px;
+}
+
 .hand {
   width: 110px;
   height: 110px;
