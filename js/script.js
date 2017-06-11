@@ -172,12 +172,6 @@ $(function () {
                 $('.doragon').fadeIn(300);
                 $('.doragon').delay(400).fadeOut(300);
 
-<<<<<<< HEAD
-=======
-                //ロゴを小さく
-                $('.logo img').css('width', '150px');
-
->>>>>>> e6ffe9b1a2b2bcdeb3ecd5e9a922bce455dea0b9
                 //じゃんけんウインドウ表示
                 $('.janken').delay(300).fadeIn(300);
             });
