@@ -127,9 +127,9 @@ $(function () {
                         backgroundImage: 'url("img/enemy1.jpg")'
                     });
                     $('.enemy_name').text('田中があらわれた！');
-                    $('.find_enemy').fadeIn(500, function () {
-                        $('.find_enemy').delay(2000).fadeOut(500);
-                    });
+                    $('.find_enemy').fadeIn(500);
+                    $('.find_enemy').delay(2000).fadeOut(500);
+
                     $('.enemy_txt').html(message_data["ms" + enemy]);
                     $('.keihin_gu').text(menu_data["menu1"]["win"]["gu"]["item"]);
                     $('.keihin_cho').text(menu_data["menu1"]["win"]["choki"]["item"]);
@@ -229,14 +229,14 @@ $(function () {
                 $(".audio")[0].pause();
                 $('.blues').fadeIn(500);
                 $('.blues_inner').html('<iframe width="100%" height="315" src="https://www.youtube.com/embed/9PAW5Cden4U?rel=0&amp;showinfo=0&controls=0;autoplay=1" frameborder="0" allowfullscreen></iframe>');
-                
-                setTimeout(function(){
-                           $('.loading').fadeIn(1500, function(){
-                            $('.blues_inner').html('');
-                               playSE("sound/dora.wav", "wav");
-                    console.log("element");
-                });
-                           }, 15000);
+
+                setTimeout(function () {
+                    $('.loading').fadeIn(1500, function () {
+                        $('.blues_inner').html('');
+                        playSE("sound/dora.wav", "wav");
+                        console.log("element");
+                    });
+                }, 15000);
             });
 
             //じゃんけん勝敗判定関数
