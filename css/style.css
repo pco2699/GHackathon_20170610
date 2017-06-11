@@ -103,12 +103,12 @@ h4 {
 }
 
 .justify {
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
 }
 
 .flex-center {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
 }
@@ -155,6 +155,7 @@ h4 {
 
 .wrap {
   /*height: 100vh;*/
+  border: 1px solid red;
   max-width: 400px;
   box-shadow: 10px 10px 10px -10px #aaa;
 }
@@ -259,7 +260,6 @@ button {
 }
 
 .enemy {
-  border: 2px solid red;
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -296,4 +296,17 @@ button {
   position: absolute;
   top: 80px;
   right: 20px;
+}
+
+.exp_circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: red;
+  width: 30px;
+  height: 30px;
+}
+
+.exp_text {
+  margin-left: 40px;
 }
