@@ -301,14 +301,14 @@ button {
 
 .enemy_name {
   position: absolute;
-  top: 10px;
-  left: 0;
+  top: 0;
+  left: 10px;
 }
 
 .hands_outer {
   position: absolute;
-  bottom: 60px;
-  left: 10px;
+  bottom: 80px;
+  left: 0;
 }
 
 .win_lose {
