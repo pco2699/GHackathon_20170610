@@ -299,7 +299,7 @@ button {
   background-repeat: no-repeat;
 }
 
-.enemy_txt {
+.enemy_name {
   position: absolute;
   top: 10px;
   left: 0;
