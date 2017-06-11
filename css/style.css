@@ -14,6 +14,18 @@ h4 {
   margin: 0;
 }
 
+/*フォント*/
+@font-face {
+    font-family: 'MyFont';
+    src: url(../font/reisyo.otf);
+/*    src: url(../font/Mouhitu.otf);*/
+/*    src: url(../font/Kouzan.otf);*/
+}
+
+body{
+    font-family: 'MyFont';
+}
+
 /* マージン */
 .margin_center {
   margin: 0 auto;
