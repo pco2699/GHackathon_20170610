@@ -55,47 +55,46 @@ $(function () {
             console.log("leap_count" + leap_count);
 
             for (hand of frame.hands) {
-                    let extendedFingers = 0;
-                    for (finger of hand.fingers) {
-                        if (finger.extended) extendedFingers++;
-                    }
-                    if (extendedFingers === 0 || extendedFingers === 5 || extendedFingers === 2) {
-                        leap_count++;
-                    }
-                    if (leap_count > 100){
-                        leap_count = 0;
-                        if (extendedFingers === 0) {
-                            $(".gu_btn").click();
-                        } else if (extendedFingers === 5) {
-                            $(".pa_btn").click();
-                        } else if (extendedFingers === 2) {
-                            $(".cho_btn").click();
-                        }
+                let extendedFingers = 0;
+                for (finger of hand.fingers) {
+                    if (finger.extended) extendedFingers++;
+                }
+                if (extendedFingers === 0 || extendedFingers === 5 || extendedFingers === 2) {
+                    leap_count++;
+                }
+                if (leap_count > 100) {
+                    leap_count = 0;
+                    if (extendedFingers === 0) {
+                        $(".gu_btn").click();
+                    } else if (extendedFingers === 5) {
+                        $(".pa_btn").click();
+                    } else if (extendedFingers === 2) {
+                        $(".cho_btn").click();
                     }
                 }
             }
+        }
         if (frame.gestures.length > 0 && leap_can_track_gesture) {
             frame.gestures.forEach(function (gesture) {
-                        switch (gesture.type) {
-                            case "circle":
-                                break;
-                            case "keyTap":
-                                break;
-                            case "screenTap":
-                                console.log("screen tap is called");
-                                if (is_jk_rslt) {
-                                    $('.janken_finish').click();
-                                }
-                                else {
-                                    $('.start_bt').click();
-                                }
-                                break;
-                            case "swipe":
-
-                                break;
+                switch (gesture.type) {
+                    case "circle":
+                        break;
+                    case "keyTap":
+                        break;
+                    case "screenTap":
+                        console.log("screen tap is called");
+                        if (is_jk_rslt) {
+                            $('.janken_finish').click();
+                        } else {
+                            $('.start_bt').click();
                         }
-                });
-            }
+                        break;
+                    case "swipe":
+
+                        break;
+                }
+            });
+        }
     });
 
 
@@ -198,6 +197,9 @@ $(function () {
                     $('.start_bt').text('つづける。');
                 }
                 if (j_stage == 6) {
+                    $('.text-align-center').fadeOut(500);
+                    $('.text-align-center').text("俺の拳醤");
+                    $('.text-align-center').delay(500).fadeIn(1000);
                     $('header').delay(2000).slideUp(1000);
                     $('.start_cooking').delay(2000).fadeIn(1000);
                 }
