@@ -371,9 +371,9 @@ $(function () {
                     $('.janken_result').fadeIn(300);
                     is_jk_rslt = true;
                     // j_stage++;
-                }
-              }
-            }, 10 *i);
+                } //elseif
+              }, 100);
+              } //for
             j_stage++;
           });
 
