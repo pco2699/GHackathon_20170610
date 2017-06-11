@@ -126,7 +126,7 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy1.jpg")'
                     });
-                    $('.enemy_name').text('田中があらわれた！');
+                    $('.enemy_name').text('あの田中が立ちはだかっている！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
                     $('.hands_outer').delay(2000).fadeIn(500);
@@ -139,7 +139,7 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy2.jpg")'
                     });
-                    $('.enemy_name').text('木村があらわれた！');
+                    $('.enemy_name').text('あの木村が立ちはだかっている！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
                     $('.hands_outer').hide();
@@ -153,7 +153,7 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy3.jpg")'
                     });
-                    $('.enemy_name').text('栗林があらわれた！');
+                    $('.enemy_name').text('あの栗林が立ちはだかっている！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
                     $('.hands_outer').hide();
@@ -167,7 +167,7 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy4.jpg")'
                     });
-                    $('.enemy_name').text('山崎があらわれた！');
+                    $('.enemy_name').text('あの山崎が立ちはだかっている！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
                     $('.hands_outer').hide();
@@ -182,7 +182,7 @@ $(function () {
                     $('.enemy').css({
                         backgroundImage: 'url("img/enemy5.jpg")'
                     });
-                    $('.enemy_name').text('児玉があらわれた！');
+                    $('.enemy_name').text('あの児玉が立ちはだかっている！');
                     $('.enemy_name').show();
                     $('.enemy_name').delay(2000).fadeOut(500);
                     $('.hands_outer').hide();
