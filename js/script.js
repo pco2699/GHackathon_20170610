@@ -287,7 +287,7 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     is_jk_rslt = true;
-                    j_stage++;
+                    // j_stage++;
                 } else if (com == 2) {
                     $('.enemy_result').html('<img src="img/cho.png">');
                     $('.win_lose').html('<img src="img/win.png">');
@@ -331,7 +331,7 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     is_jk_rslt = true;
-                    j_stage++;
+                    // j_stage++;
                 } else if (com == 3) {
                     $('.enemy_result').html('<img src="img/pa.png">');
                     $('.win_lose').html('<img src="img/lose.png">');
@@ -375,14 +375,10 @@ $(function () {
                     }
                     $('.janken_result').fadeIn(300);
                     is_jk_rslt = true;
-
-                    j_stage++;
-                }
-
-
-            });
-
-
+                    // j_stage++;
+                } //elseif
+            j_stage++;
+          });
 
             $('.cho_btn').on("click", function () {
                 // Leap じゃんけん検知OFF
