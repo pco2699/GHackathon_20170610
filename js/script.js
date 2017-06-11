@@ -201,9 +201,7 @@ $(function () {
                 // Leap ジェスチャ検知ON
                 leap_can_track_gesture = true;
 
-
                 var humanGu = 1;
-                for (var i = 0; i < 20; i++) {
                     //敵の手を乱数で決める
                     console.log('test');
                     var com = Math.floor(Math.random() * 3 + 1);
@@ -341,8 +339,7 @@ $(function () {
 
                         j_stage++;
                     }
-                    console.log(i);
-                }
+
 
             });
 
