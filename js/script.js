@@ -231,7 +231,7 @@ $(function () {
                                playSE("sound/dora.wav", "wav");
                     console.log("element");
                 });
-                           }, 4000);
+                           }, 15000);
             });
 
             //じゃんけん勝敗判定関数
